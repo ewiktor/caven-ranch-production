@@ -63,7 +63,8 @@ Not every export has every folder. Some also carry an identity/brand-elements se
    - `00 brand.md` is bound (brand + strategy in place); the round/mode/toolchain defaults hold until production — no need to stop for them,
    - identity references found and flagged,
    - anything missing or broken,
-   - and the next step: **a board pass** (`function/tools/board pass.md`) to form expressions from the references + explorations + commentary, since `02 expressions/` is still empty.
+   - **ask whether there's an exploration board** (a Figma / FigJam / whiteboard link) for this brand. The user may have one and not have included it in the export. If yes, get the link and record it in `00 brand.md`'s **Board** field — the board pass can read it directly (Figma MCP) and it makes the pass far richer than working from the export alone. If no, say so; the board pass will work from the loaded references + explorations.
+   - and the next step: **a board pass** (`function/tools/board pass.md`) to form expressions from the board (if there is one) plus the references + explorations + commentary, since `02 expressions/` is still empty.
 
 ## What stays empty after loading
 

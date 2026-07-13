@@ -10,7 +10,12 @@ The exploration round's outputs, grouped and marked up — wherever they live (F
 
 ## Access
 
-Preferred: direct read access to the board (e.g. Figma MCP), so the AI can read frames and comments directly. Reliable fallback: the user flips through and talks per band (transcribed); the AI never needs to see the images — the commentary is what gets worked. Either way the judgment is the user's.
+**First, check for a board.** Look at `00 brand.md`'s Board field, and if it's empty, ask the user directly: "Is there a Figma / FigJam / whiteboard exploration board for this brand?" Don't assume there isn't one just because the export didn't include a link — a board is common and easy to forget to send. (The load step should have asked, but confirm here.)
+
+- **If there's a board:** get the link and read it directly (Figma MCP) — frames plus the user's comments. This is the richest input.
+- **If there's no board:** the "board" is the loaded export — the references carry the user's commentary (their per-item talk-through) and the explorations carry theirs. Work from those.
+
+Either way the judgment is the user's; the AI works their words into structure. Reliable fallback in all cases: the user flips through and talks per band (transcribed); the AI never needs to see the images — the commentary is what gets worked.
 
 ## The pass, band by band
 
