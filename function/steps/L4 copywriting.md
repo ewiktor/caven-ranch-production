@@ -1,5 +1,5 @@
-**Reads:** the confirmed outline and direction · 05 knowledge/ (the slices the outline calls for) · L8 writing checks.md before writing
-**Writes:** the copy section of the brief in 07 briefs/[concept]/
+**Reads:** the confirmed outline and direction · 06 knowledge/ (the slices the outline calls for) · L8 writing checks.md before writing
+**Writes:** the copy section of the brief in 08 briefs/[concept]/
 
 # Composition - Copywriting
 

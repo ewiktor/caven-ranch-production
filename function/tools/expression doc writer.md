@@ -4,7 +4,7 @@
 
 Write one expression's `doc.md` — the shape in `02 expressions/_expression-template/doc.md` — from the raw material in its folder.
 
-**Reads:** `02 expressions/[name]/feedback.md` (the principal's raw commentary — the primary source) · `refs/` including each reference's own markdown commentary where it carries one · `explorations/` and any capture.md files in it · `logic/controls - composition.md` or `controls - graphic.md` (which controls exist for this type) · `logic/ad logic - composition.md` or `ad logic - graphics.md` (the option vocabulary)
+**Reads:** `02 expressions/[name]/feedback.md` (the principal's raw commentary — the primary source) · the references tagged to this expression in `04 references/` (each carries its description + the principal's commentary) · `explorations/` and any capture.md files in it · `logic/controls - composition.md` or `controls - graphic.md` (which controls exist for this type) · `logic/ad logic - composition.md` or `ad logic - graphics.md` (the option vocabulary)
 **Writes:** `02 expressions/[name]/doc.md`. The principal QAs every doc before it's treated as real.
 
 ## How

@@ -4,7 +4,7 @@
 
 **STAY WIDE — the brief suggests, it does not decide.** Whittling means dropping the irrelevant (30 media → the 14 relevant), never picking winners. Media stays candidates, plural per slot. Knowledge stays the relevant raw chunks, not one narrowed thread. Expressions in play lists every plausibly relevant one — many, not a curated few; suggesting wide is the point, and the production agent may still pull others from 02 expressions/. Picking the single image, the single expression combination, or one layout is L5's job at compile time — and even L5 makes 2–3 different narrowings from this one brief on purpose. If a section of this brief reads like a decision, it's over-tight.
 
-**Concept:** [one paragraph — lifted from 06 content concepts/[concept].md: goal, move, message, angle]
+**Concept:** [one paragraph — lifted from 07 content concepts/[concept].md: goal, move, message, angle]
 
 ## Outline (from L2)
 
@@ -12,11 +12,11 @@
 
 ## Knowledge (pulled in, not pointed at)
 
-[The actual chunks from 05 knowledge/ this piece draws on — facts, numbers, dates, quotes, pasted in. The production agent must not need to open 05 knowledge/.]
+[The actual chunks from 06 knowledge/ this piece draws on — facts, numbers, dates, quotes, pasted in. The production agent must not need to open 06 knowledge/.]
 
 ## Media (whittled, with CDN links)
 
-<!-- Only the relevant candidates, from 03 media/Media Markdown Docs/. Not final picks — candidates. -->
+<!-- Only the relevant candidates, from 03 media/. Not final picks — candidates. -->
 - `[CDN link]` — [what it shows, what it carries for this piece: place, mood, scale, proof]
 
 ## Graphics (with CDN links)

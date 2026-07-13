@@ -1,5 +1,5 @@
-**Reads:** 06 content concepts/[concept].md · 05 knowledge/ · 03 media/Media Markdown Docs/ · input/01 brief (strategy).md
-**Writes:** the outline section of the brief in 07 briefs/[concept]/
+**Reads:** 07 content concepts/[concept].md · 06 knowledge/ · 03 media/ · input/01 brief (strategy).md
+**Writes:** the outline section of the brief in 08 briefs/[concept]/
 
 # Composition - Editorial Outline
 

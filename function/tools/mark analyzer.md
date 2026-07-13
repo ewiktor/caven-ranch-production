@@ -1,4 +1,4 @@
-**Run on demand** — an action prompt you run on a logo, wordmark, or lettering image. Not pull-in logic. Used during graphics work (04 graphics/) and the logo-script question.
+**Run on demand** — an action prompt you run on a logo, wordmark, or lettering image. Not pull-in logic. Used during graphics work (05 graphics/) and the logo-script question.
 
 # MARK ANALYZER
 

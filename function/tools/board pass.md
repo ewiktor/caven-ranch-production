@@ -21,8 +21,8 @@ Preferred: direct read access to the board (e.g. Figma MCP), so the AI can read 
 
 ## Outputs — where things land
 
-- One folder per confirmed expression in `02 expressions/[name]/`, template copied in, the band's keying-on commentary dropped into `feedback.md` verbatim. (Refs and explorations export from the board separately, after.)
+- One folder per confirmed expression in `02 expressions/[name]/`, template copied in, the band's keying-on commentary dropped into `feedback.md` verbatim. Tag which references from `04 references/` belong to this expression (name them in its `doc.md` — references stay in the central library, not copied). Move any staged explorations from `input/explorations/` into the expression's `explorations/`.
 - Settled decisions into `01 settled/settled.md`, at their honest strength — near-locked stays near-locked. Questions the principal explicitly keeps open go to `00 brand.md`'s open-questions list, not to settled.
-- Assets to make into `04 graphics/to-make.md`, with blockers named.
+- Assets to make into `05 graphics/to-make.md`, with blockers named.
 - Anything that dies on the board: note it died and why, so it doesn't resurface next round.
 - Update the state line in `00 brand.md`.

@@ -2,7 +2,7 @@
 
 # Production Log Round
 
-Review one expression's just-finished variation set and act on what the review finds. The per-derivation capture (`08 output/_contract.md`) records what was made; the round is the QA — the system checks itself, nothing waits on a human. A round that only logs has failed.
+Review one expression's just-finished variation set and act on what the review finds. The per-derivation capture (`09 output/_contract.md`) records what was made; the round is the QA — the system checks itself, nothing waits on a human. A round that only logs has failed.
 
 ## The loop
 
@@ -14,13 +14,13 @@ Loop depth follows the check tiering in `00 index.md` (the mode line in `00 bran
 
 **This tool is lane-agnostic** — it runs the same whichever build tool from `00 brand.md` produced the set. The control set (the expression docs) is shared across all lanes, so a doc fix written back from any lane corrects every lane's next run. The one lane difference is the fault-line taxonomy:
 
-- **Generation lane** (a compiled prompt from `07 briefs/` runs in a tool): doc / prompt / execution / axis-finding.
+- **Generation lane** (a compiled prompt from `08 briefs/` runs in a tool): doc / prompt / execution / axis-finding.
 - **Direct-build lane** (the agent reads the docs and builds in-tool, live): doc / execution / axis-finding. **No prompt bucket exists — don't invent one.** "The instructions were unclear" is not a category: if the doc misled you, that's a doc problem, edit it; if you missed what it said, that's an execution problem, fix the build. A phantom prompt bucket is a blame sink that lets both off the hook.
 
 "Build again" means whatever rebuilding is in your lane — recompile and rerun the prompt, or rebuild the variation directly.
 
-**Reads:** the set's capture.md files · the expression's `doc.md` (the control set being tested) and `feedback.md` · `refs/` for the judging standard · `logic/controls - composition.md` / `controls - graphic.md` and the matching AD logic block, when classifying a finding against controls · prior rounds in the expression's `explorations/`
-**Writes:** the round entry is **one markdown file in the expression's `explorations/` folder, named `round-[tool]-[date].md`** (second round same tool same day: `-2`). That is the primary home in every lane, always — no deciding, no stalling. If the set ran under a concept, copy the round file into `08 output/[concept]/` alongside the run record (same copy-back symmetry as the contract); if there is no concept run (expression studies, asset efforts), `explorations/` is the whole record and `08 output/` gets nothing. Also writes `doc.md` revisions when the fault line lands there — version-bumped, marked "(agent call, review)".
+**Reads:** the set's capture.md files · the expression's `doc.md` (the control set being tested) and `feedback.md` · the references this expression draws on (in `04 references/`) for the judging standard · `logic/controls - composition.md` / `controls - graphic.md` and the matching AD logic block, when classifying a finding against controls · prior rounds in the expression's `explorations/`
+**Writes:** the round entry is **one markdown file in the expression's `explorations/` folder, named `round-[tool]-[date].md`** (second round same tool same day: `-2`). That is the primary home in every lane, always — no deciding, no stalling. If the set ran under a concept, copy the round file into `09 output/[concept]/` alongside the run record (same copy-back symmetry as the contract); if there is no concept run (expression studies, asset efforts), `explorations/` is the whole record and `09 output/` gets nothing. Also writes `doc.md` revisions when the fault line lands there — version-bumped, marked "(agent call, review)".
 
 ## The entry
 
@@ -32,7 +32,7 @@ Loop depth follows the check tiering in `00 index.md` (the mode line in `00 bran
    - **Prompt problem** — the doc was right but the translation layer mistranslated it → fix the translation for the next run; the doc stays untouched. *Lane note:* in a compiled-prompt lane the translation layer is the compiled prompt; in a direct build it's the stated build decisions; where no translation layer exists separately from the build, this category collapses away — fault-line on doc / execution / axis-finding only.
    - **Execution problem** — prompt was right, the build or tool missed it → fix it in the build. Code is steerable mid-flight: edit and re-verify, don't re-roll.
    - **Axis finding** — the failure sits on an *open* control and the variation did its job by ruling a direction out. That's evidence, not a fault: record it in the round, flag it as a negative *candidate* — it becomes a real negative only when the principal kills it. Findings that land on not-yet-vetted controls feed that open vet as evidence; they classify nothing and lock nothing.
-5. **Next move** — named and then *done*: another variation, a doc revision, a refs/media swap (pull different media from `03 media/` or different refs), an asset that must be made first, or — only when the doc genuinely cannot answer — a flagged question for the principal that the run routes around, never waits on.
+5. **Next move** — named and then *done*: another variation, a doc revision, a reference/media swap (pull different media from `03 media/` or different references from `04 references/`), an asset that must be made first, or — only when the doc genuinely cannot answer — a flagged question for the principal that the run routes around, never waits on.
 
 ## What counts as clean
 

@@ -1,5 +1,5 @@
-**Reads:** the assembled brief in 07 briefs/[concept]/ · 03 media/Media Markdown Docs/ and 04 graphics/ for CDN links · logic/ad logic - composition.md (execution vocabulary) · L5a for the format · 00 brand.md for which build tools are in play
-**Writes:** 2–3 compiled build prompts into 07 briefs/[concept]/prompts/ — tools run them, results captured per 08 output/_contract.md
+**Reads:** the assembled brief in 08 briefs/[concept]/ · 03 media/ and 05 graphics/ for CDN links · logic/ad logic - composition.md (execution vocabulary) · L5a for the format · 00 brand.md for which build tools are in play
+**Writes:** 2–3 compiled build prompts into 08 briefs/[concept]/prompts/ — tools run them, results captured per 09 output/_contract.md
 
 # Applied Direction
 

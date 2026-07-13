@@ -4,32 +4,43 @@ Duplicate the template repo, then work down this list. The system (CLAUDE.md, `0
 
 A brand will arrive with varying degrees of material. Nothing on this list except the first two items blocks starting — the step docs all state what they do when a module is missing. Fill what exists, flag what doesn't.
 
+## The fast path — a DRAPER app export
+
+If the brand arrives as a **DRAPER app export folder** (a folder with `brief.md` + `production-notes/` + `knowledge/` + `media/` + `references/` + `explorations/`), don't work this list by hand. Run **`function/tools/load brand.md`** — it places every file, conforms it to the template shapes, merges the reference commentary, verifies the CDN links, and reports what's still missing. Then just fill the three fields it flags in `00 brand.md` (principal, toolchain, round + mode) and run a board pass.
+
+The checklist below is the **manual/fallback path and the spec** for what each folder expects when a brand doesn't arrive as a clean export.
+
 ## 1. Bind the brand — required
 
 - [ ] Fill `00 brand.md` completely: brand, principal, round + mode, toolchain, state line, open questions. An agent landing in a repo with an unfilled brand.md is instructed to stop.
 - [ ] **Paste in the strategy overview.** The overview is written OUTSIDE the repo — the repo never compiles it. Copy `function/tools/strategy overview writer.md` into a separate chat, give it the brand's strategy materials, and paste its output into `input/01 brief (strategy).md`. That digest is what the L-steps read. If no strategy exists yet, producing it is the first job of the engagement, not a template task.
 
-## 2. Knowledge — `05 knowledge/`
+## 2. Knowledge — `06 knowledge/`
 
-- [ ] One md per domain (the building, the region, the operation, the catalog — whatever the brand's domains are), per `05 knowledge/_knowledge-doc-template.md`. Date-stamp the filenames.
+- [ ] One md per domain (the building, the region, the operation, the catalog — whatever the brand's domains are), per `06 knowledge/_knowledge-doc-template.md`. Date-stamp the filenames.
 - [ ] Facts only, sourced. This folder is the hard-truth base: if it isn't in here, production can't state it.
 
 ## 3. Media — `03 media/`
 
 - [ ] Assets into `03 media/assets/`.
-- [ ] One md per asset in `03 media/Media Markdown Docs/`, per `_media-doc-template.md`: description (what it shows, what it carries), local path, and the CDN link. **The CDN link is what compiled prompts use — a media doc without one is not done.**
+- [ ] One md per asset in `03 media/`, per `_media-doc-template.md`: description (what it shows, what it carries), local path, and the CDN link. **The CDN link is what compiled prompts use — a media doc without one is not done.**
 - [ ] Subfolders for processed families (e.g. improved/doctored versions of current photography) are fine; each still gets its md.
 
-## 4. References — `input/new-references/` → `02 expressions/`
+## 4. References — `04 references/` (the reference library)
 
-- [ ] Raw references the brand or principal supplies land in `input/new-references/` as an inbox.
-- [ ] References only become production material once they are attached to an expression: a folder in `02 expressions/` with the reference in `refs/`, the principal's commentary in `feedback.md`, and a `doc.md` written per the expression doc writer tool. If the brand arrives pre-explored (a prior round happened), port each surviving idea as one expression folder.
-- [ ] If the brand arrives cold (no exploration yet), `02 expressions/` stays empty until the first round's board pass — that is correct, not a gap.
+- [ ] One md per reference in `04 references/`, asset in `04 references/assets/`, per `_reference-doc-template.md`: **Description** (what it is) + **User context** (the principal's commentary, verbatim — this is what becomes locked controls) + the **CDN link**. A reference without its commentary is half-loaded.
+- [ ] Identity references (an existing logo, monogram, wordmark) get tagged as such in their User context, and flagged — they may also seed `05 graphics/`.
+- [ ] The reference library is central: expressions point into it, references aren't copied per expression.
 
-## 5. Graphics — `04 graphics/`
+## 4b. Explorations — `input/explorations/` (if the brand arrives pre-explored)
+
+- [ ] Prior outputs (each with the principal's commentary + the prompt that made it) stage in `input/explorations/`. They are NOT expressions yet.
+- [ ] The first **board pass** (`function/tools/board pass.md`) forms expressions from the references + explorations + commentary, and files each exploration into its expression. If the brand arrives cold (no explorations), `02 expressions/` and `input/explorations/` stay empty until that first board pass — correct, not a gap.
+
+## 5. Graphics — `05 graphics/`
 
 - [ ] Existing brand marks/graphics: asset + one md each (use the mark analyzer tool for wordmarks and lettering).
-- [ ] Assets that need making go on `04 graphics/to-make.md`, ordered, with blockers named (an asset that blocks judging an expression goes first).
+- [ ] Assets that need making go on `05 graphics/to-make.md`, ordered, with blockers named (an asset that blocks judging an expression goes first).
 
 ## 6. Settled — `01 settled/`
 
@@ -38,7 +49,7 @@ A brand will arrive with varying degrees of material. Nothing on this list excep
 
 ## 7. Concepts and briefs — usually empty at intake
 
-- [ ] `06 content concepts/`, `07 briefs/`, `08 output/` start empty (templates and contract in place). They fill through the L-steps. Port them only if a prior round genuinely produced them.
+- [ ] `07 content concepts/`, `08 briefs/`, `09 output/` start empty (templates and contract in place). They fill through the L-steps. Port them only if a prior round genuinely produced them.
 
 ## 8. Verify
 

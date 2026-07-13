@@ -25,7 +25,7 @@ Other people, if any, and their lanes:
 
 - **Build tools:** [e.g. Claude Code in Paper, v0, Figma Make — whatever this brand's round runs in]
 - **Image generation:** [tool + model, if in play]
-- **CDN:** [where assets get hosted; the pattern the Media Markdown Docs link to]
+- **CDN:** [where assets get hosted; the pattern the media/reference docs link to — e.g. media.withdraper.com/[workspace-id]/[hash]]
 - **Board:** [Figma/whiteboard URL, if one exists]
 - **External docs:** [Notion pages or other sources of truth, if any]
 

@@ -1,6 +1,6 @@
 # [expression name] — expressions doc
 
-<!-- One folder per expression. This doc is the brief for the expression itself; refs/ holds the references that kicked it off, explorations/ holds every output made of it (captured per 08 output/_contract.md, plus round entries). feedback.md holds the principal's raw transcribed commentary — this doc is the distilled version. Advance the version line below each round instead of losing the history. -->
+<!-- One folder per expression. This doc is the brief for the expression itself. The references that kicked it off are tagged from the library in 04 references/ (name them in this doc — they are not copied here). explorations/ holds every output made of it (captured per 09 output/_contract.md, plus round entries). feedback.md holds the principal's raw transcribed commentary — this doc is the distilled version. Advance the version line below each round instead of losing the history. -->
 
 **Version:** V1 · [date] · [what changed from the last version, one line]
 **Type:** brand expression / content-concept expression / conceptual expression (per 00 index.md glossary)
@@ -26,13 +26,19 @@
 
 ## Leave open — filled + cycled (variation space)
 
-<!-- Everything not locked, in the two non-locked fill-states. FILLED controls (subject-matter) are determined at production time by 05 knowledge/ and 03 media/ — not invented; variation on them comes from swapping which knowledge/media fills the slot. CYCLED controls are genuinely open — pull option words from other expressions or from the ad logic blocks — and that cycling is what makes the variations. Where the principal's commentary hedged on a focus control, the hedge is a fork: name the variant directions worth building as distinct variations. -->
+<!-- Everything not locked, in the two non-locked fill-states. FILLED controls (subject-matter) are determined at production time by 06 knowledge/ and 03 media/ — not invented; variation on them comes from swapping which knowledge/media fills the slot. CYCLED controls are genuinely open — pull option words from other expressions or from the ad logic blocks — and that cycling is what makes the variations. Where the principal's commentary hedged on a focus control, the hedge is a fork: name the variant directions worth building as distinct variations. -->
 
 - [open control or dimension, and any specific directions worth cycling through]
 
 ## Negative
 
 [What this expression must not do or become. Ruled-out directions, things tried and killed, the failure mode nearby. Only the principal's kills go here — never an inferred prohibition, and never a counter-negative added to cancel a wrong positive (delete the wrong positive instead).]
+
+## References (tagged)
+
+<!-- Which references from 04 references/ this expression draws on — named/linked, not copied. Each library reference carries the principal's commentary; that commentary is where the locked controls above came from. List them so the doc-writer and the self-review can re-open the exact references this expression is judged against. -->
+
+- [reference name](../../04%20references/[reference].md) — [what this expression takes from it]
 
 ## Open questions
 

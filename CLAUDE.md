@@ -15,13 +15,14 @@ input/               what the brand arrived with: strategy brief, raw material, 
 logic/            THE SYSTEM — control sets · controls · ad logic (the pull-in "blocks")
 function/         THE SYSTEM — steps/ (L1–L8 message flow) · tools/ (run on demand)
 01 settled/          settled.md (decisions off the table) + learnings.md (tool and prompt findings)
-02 expressions/      one folder per expression: doc.md, feedback.md, refs/, explorations/
-03 media/            assets/ + Media Markdown Docs/ (tags, write-up, CDN links — one md per asset)
-04 graphics/         made assets + one md per asset + to-make.md
-05 knowledge/        the brand's fact base (raw input to briefs; production agents don't read this directly)
-06 content concepts/ one md per decided piece of content
-07 briefs/           one folder per concept: the assembled brief + compiled prompts
-08 output/           what tools produce, captured per _contract.md
+02 expressions/      one folder per expression: doc.md, feedback.md, explorations/ (references tagged from 04 references/)
+03 media/            one md per asset (description + CDN link) + assets/
+04 references/       reference library — one md per reference (description + your commentary + CDN) + assets/
+05 graphics/         existing/made brand marks — one md per asset + to-make.md
+06 knowledge/        the brand's fact base (raw input to briefs; production agents don't read this directly)
+07 content concepts/ one md per decided piece of content
+08 briefs/           one folder per concept: the assembled brief + compiled prompts
+09 output/           what tools produce, captured per _contract.md
 ```
 
 Root numbers (01–08) are all **brand** — the material that flows through a round. The **system** (`logic/`, `function/`) sits outside the numbers, along with `input/`. L-numbers are the message-flow steps. Files starting with `_` are templates or contracts, not content.
@@ -31,10 +32,10 @@ Root numbers (01–08) are all **brand** — the material that flows through a r
 The full walkthrough is `00 - START HERE.md`. The short form:
 
 1. Open an expression in `02 expressions/` before you make anything. Its `doc.md` is the brief for the expression itself: locked controls are constraints, open controls are the variation space.
-2. Work from a content concept in `06 content concepts/`, never from a blank page. No concept? Write it first (L1).
-3. Build the brief per the L-steps in `function/steps/`: outline → visual direction → copy. Results accumulate in `07 briefs/[concept]/`.
+2. Work from a content concept in `07 content concepts/`, never from a blank page. No concept? Write it first (L1).
+3. Build the brief per the L-steps in `function/steps/`: outline → visual direction → copy. Results accumulate in `08 briefs/[concept]/`.
 4. Compile (L5) into 2–3 build prompts and run them in the tools named in `00 brand.md`.
-5. Capture at the moment of making, per `08 output/_contract.md`. Copy the capture into each source expression's `explorations/`. Feedback left in your head is gone.
+5. Capture at the moment of making, per `09 output/_contract.md`. Copy the capture into each source expression's `explorations/`. Feedback left in your head is gone.
 6. When an expression's variation set completes, run `function/tools/production log round.md` and act on the fault line before moving on.
 7. Feed the expressions: new idea → new folder. Developed → advance the doc version. Dead → write that it died and why.
 
@@ -42,7 +43,7 @@ The full walkthrough is `00 - START HERE.md`. The short form:
 
 - **Settled is settled.** `01 settled/settled.md` items are constraints, never considerations. Do not re-open them.
 - **Locked controls are locked.** Variation comes from the open ones. Never harden an open control into a lock on your own — that is the principal's call.
-- **Facts come from `05 knowledge/` only.** Nothing invented. Nothing planned framed as already real — in copy or in imagery.
+- **Facts come from `06 knowledge/` only.** Nothing invented. Nothing planned framed as already real — in copy or in imagery.
 - **Negatives are the principal's kills only.** Never an inferred prohibition. A wrong positive gets deleted, not countered.
 - **Write-back.** When the principal corrects direction live, the correction supersedes the doc the moment they say it — and the doc gets amended the same session, version-bumped. Corrections that die in chat get re-made wrong by the next agent.
 - **Provenance.** Every lock, preserve, and avoid traces to a source: the principal's words, a ref, settled, or knowledge. A claim with no source is agent judgment and gets flagged as such, so a reaction to it is never mistaken for a reaction to evidence.
@@ -52,7 +53,7 @@ The full walkthrough is `00 - START HERE.md`. The short form:
 
 The known failure: an agent builds, likes its own output, and never re-opens the references. Do not be that agent.
 
-- Before judging any output, open the expression's `refs/` and its `doc.md` again and **name the comparison**: which kept exploration or ref image this board is judged side-by-side against — composition, scale relationships, how the type fills the frame. "Does it fit" is not a comparison.
+- Before judging any output, open the references this expression draws on (in `04 references/`) and its `doc.md` again and **name the comparison**: which kept exploration or ref image this board is judged side-by-side against — composition, scale relationships, how the type fills the frame. "Does it fit" is not a comparison.
 - Self-review is not one pass. Build → review against doc + refs → fix → review again. The production log round is the formal station, but the in-flight checks are yours.
 - "Clean" is never self-graded by vibe. It requires receipts, per the production log round doc.
 - The fine controls are where lazy outputs die: type sizing, kerning, exact spacing, the small touches. Generic left-right layout defaults are the failure mode. When a locked control names these, hammer on them.
