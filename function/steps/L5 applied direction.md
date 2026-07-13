@@ -1,9 +1,9 @@
 **Reads:** the assembled brief in 08 briefs/[concept]/ · 03 media/ and 05 graphics/ for CDN links · logic/ad logic - composition.md (execution vocabulary) · L5a for the format · 00 brand.md for which build tools are in play
-**Writes:** 2–3 compiled build prompts into 08 briefs/[concept]/prompts/ — tools run them, results captured per 09 output/_contract.md
+**Writes:** 2–3 compiled build prompts into 08 briefs/[concept]/prompts/. **This step's output is the prompt — it does not build.** In an attended session, hand the prompts to the user to run; the design gets built and captured elsewhere (by the user, or by the unattended run). Producing the design here is out of scope for this step.
 
 # Applied Direction
 
-The pull-it-together step. After the editorial outline, visual direction, and copy exist and have been checked, this step compiles everything into a build prompt that a production tool (whatever `00 brand.md` names) executes with as little left on its plate as possible — the goal is that the build agent is focused on nothing but building.
+The pull-it-together step. After the editorial outline, visual direction, and copy exist and have been checked, this step compiles everything into a build prompt that a production tool (whatever `00 brand.md` names) executes with as little left on its plate as possible — the goal is that the build agent is focused on nothing but building. **This step produces the prompt and stops; it is not where the design gets built.** The person (or the unattended run) takes the prompt to the tool.
 
 What goes into the compiled prompt:
 

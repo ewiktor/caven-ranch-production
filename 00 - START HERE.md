@@ -16,7 +16,7 @@ One brand's production repo, duplicated from the DRAPER production template. The
 
 3. **Build the brief.** Per concept, walk the steps in `function/steps/`: L2 outline (what it covers, in what order, the single point), L3 visual direction (which expressions are in play, which media lands where — this is where you pull the expression docs and the media CDN docs), L4 copy (good enough for the round's mode — see the bar below). Each step doc says exactly what to read and where to write. The result accumulates in `08 briefs/[concept]/` in the template's shape.
 
-4. **Compile, then produce.** L5 turns the finished brief into 2–3 build prompts (full spec, CDN links inline, so the tool does nothing but build). Run those in the tools named in `00 brand.md`.
+4. **Compile, then hand off.** L5 turns the finished brief into 2–3 build prompts (full spec, CDN links inline, so the tool does nothing but build). In an attended session the agent's job ends here: it gives *you* the prompts and you run them in your tools (v0, Figma Make, Paper). The agent builds the design itself only if you tell it to, or when the `unattended run` tool is running the show.
 
 5. **Capture at the moment of making.** Before moving to the next thing: screenshot/export the result and write the small markdown per `09 output/_contract.md` — which tool, which prompt, which expressions were in play, and your honest commentary. Then copy that capture into each source expression's `explorations/`. Feedback captured in the moment is what the next round runs on; feedback left in your head is gone.
 

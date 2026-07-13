@@ -46,10 +46,20 @@ The full walkthrough is `00 - START HERE.md`. The short form:
 1. Open an expression in `02 expressions/` before you make anything. Its `doc.md` is the brief for the expression itself: locked controls are constraints, open controls are the variation space.
 2. Work from a content concept in `07 content concepts/`, never from a blank page. No concept? Write it first (L1).
 3. Build the brief per the L-steps in `function/steps/`: outline → visual direction → copy. Results accumulate in `08 briefs/[concept]/`.
-4. Compile (L5) into 2–3 build prompts and run them in the tools named in `00 brand.md`.
-5. Capture at the moment of making, per `09 output/_contract.md`. Copy the capture into each source expression's `explorations/`. Feedback left in your head is gone.
+4. Compile (L5) into 2–3 build prompts — **then stop and hand them to the user.** The compiled prompt is your deliverable (see "Who builds" below).
+5. Capture at the moment of making, per `09 output/_contract.md` — this happens *after* something gets built (by the user, or by you in an unattended run). Copy the capture into each source expression's `explorations/`.
 6. When an expression's variation set completes, run `function/tools/production log round.md` and act on the fault line before moving on.
 7. Feed the expressions: new idea → new folder. Developed → advance the doc version. Dead → write that it died and why.
+
+## Who builds — you write prompts, you don't build (by default)
+
+**Your deliverable in an attended session is the compiled build prompt, not the built design.** When you finish L5, present the 2–3 prompts to the user and stop. The user runs them in their tools (v0, Figma Make, Paper) and brings back the output. Do **not** start writing HTML, rendering, screenshotting, or otherwise producing the design yourself.
+
+Build it yourself only when one of these is true:
+- the user explicitly says "you build it" / "run it yourself," **or**
+- you are running `function/tools/unattended run.md` (the autonomous mode — nobody's there to run the prompts, so the run produces).
+
+Producing without being asked is the most common way this goes wrong. If you're unsure whether to build, hand off the prompt and ask.
 
 ## Hard rules — universal, every brand, every output
 
