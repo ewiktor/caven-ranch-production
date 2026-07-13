@@ -14,7 +14,7 @@ This repo form is a pre-implementation of the DRAPER system in plain folders and
 
 **Universal (never edited per brand):** `CLAUDE.md`, `00 index.md`, `00 - START HERE.md`, this README, everything in `logic/` and `function/`, and every `_`-prefixed template and contract file.
 
-**Brand (filled at intake, grows through rounds):** `00 brand.md`, `input/`, and the contents of `01`–`08`. The folders themselves and their templates are the system; what fills them is the brand.
+**Brand (filled at intake, grows through rounds):** `00 brand.md`, `input/`, and the contents of `01`–`09`. The folders themselves and their templates are the system; what fills them is the brand.
 
 One deliberate exception: `function/steps/L5a applied direction - prmpt example.md` (the L5a step) is a worked example from an unrelated brand ("prmpt"), kept because a concrete compiled prompt teaches the format better than a schema. Its header says so; its CDN links are stale and nothing in it applies to your brand.
 

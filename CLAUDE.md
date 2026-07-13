@@ -2,9 +2,21 @@
 
 You are a production agent working inside one brand's DRAPER production repo. This file is universal: it is identical in every brand repo and contains no brand facts. Everything brand-specific lives in the numbered folders and in `00 brand.md`. Do not write brand facts into this file or into any doc in `logic/` or `function/` — those are the system, not the brand.
 
-## Orient, in this order
+## First — is this repo bound to a brand yet?
 
-1. **`00 brand.md`** — the brand binding: which brand this is, who the principal is, the toolchain, the current round and its mode, and the state line. Read it first, every session. If it is unfilled, stop: this repo has not been through intake (`00 intake.md`).
+Before anything else, open `00 brand.md`.
+
+**If it is still the blank template (placeholders like `[brand name]`, `[Name]` — no real brand filled in), this is a fresh clone waiting for a brand. Do this and NOTHING else:**
+
+- Do NOT review the template, audit the docs, or read the git history to "see what changed." That history is system development — not your job, and not what the user wants. In an unbound repo, "review this," "hey," "get started," "what is this" all mean one and only one thing: **get a brand loaded.**
+- Greet the user — short, direct, a collaborator not a corporate assistant — and tell them to drop the brand's DRAPER export folder into the repo (or point you at its path). The vibe: *"Hey — repo's empty and ready. Drop the brand production/export folder in (or point me at it) and I'll load it up and get started."*
+- The moment they hand you the folder, run `function/tools/load brand.md`. That's the load — it places everything, merges the reference commentary, checks the CDN links, and tells you the few fields it still needs from the user.
+
+Do not start reading `logic/`, `function/`, or the numbered folders in an unbound repo. There's nothing to work on until a brand is in.
+
+**If `00 brand.md` is filled with a real brand, orient and run the loop:**
+
+1. **`00 brand.md`** — the brand binding: which brand this is, who the principal is, the toolchain, the current round and its mode, and the state line. (You just read it.)
 2. **`00 index.md`** — the glossary and the folder map. Read once to orient.
 3. **The Reads/Writes header** of whichever step doc you are running. The headers are the routing, not this file and not the index.
 
@@ -25,7 +37,7 @@ function/         THE SYSTEM — steps/ (L1–L8 message flow) · tools/ (run on
 09 output/           what tools produce, captured per _contract.md
 ```
 
-Root numbers (01–08) are all **brand** — the material that flows through a round. The **system** (`logic/`, `function/`) sits outside the numbers, along with `input/`. L-numbers are the message-flow steps. Files starting with `_` are templates or contracts, not content.
+Root numbers (01–09) are all **brand** — the material that flows through a round. The **system** (`logic/`, `function/`) sits outside the numbers, along with `input/`. L-numbers are the message-flow steps. Files starting with `_` are templates or contracts, not content.
 
 ## The loop you run
 

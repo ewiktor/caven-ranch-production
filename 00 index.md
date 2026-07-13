@@ -43,7 +43,7 @@ function/         steps/ (L1–L8 message flow) · tools/ (run on demand)       
 
 ## Conventions
 
-- Root numbers (01–08) are all brand — the material that flows through a round; the system (`logic/`, `function/`) and `input/` sit outside the numbers. L-numbers are the message-flow steps. Never refer to a step by bare number.
+- Root numbers (01–09) are all brand — the material that flows through a round; the system (`logic/`, `function/`) and `input/` sit outside the numbers. L-numbers are the message-flow steps. Never refer to a step by bare number.
 - Files starting with `_` are templates or contracts, not content.
 - Every step doc opens with **Reads:** and **Writes:** — that header is authoritative for what to pull in and where results go.
 
