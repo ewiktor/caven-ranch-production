@@ -59,9 +59,9 @@ The known failure: an agent builds, likes its own output, and never re-opens the
 
 ## Variation — where it comes from
 
-Variations for an expression study come from two places, and both are required:
+Controls sit in three fill-states (per the DRAPER schema): **locked** (from commentary), **filled** (from knowledge + media), **cycled** (open). Variations come from two places, and both are required:
 
-1. **Cycling the open controls** — different media, different knowledge, different values on the controls the doc leaves open.
+1. **Cycling the cycled controls, and swapping what fills the filled ones** — different media, different knowledge, different values on the controls the doc leaves open.
 2. **Variant directions inside the focus controls** — the controls the expression is actually testing usually admit multiple directions (a hedge in the principal's commentary is a fork, not a lock). Build those as distinct variations, not as one averaged take.
 
 A set that varies only the media while every layout decision stays identical has not varied. A set that varies everything at once cannot be judged. Cycle deliberately and say in the capture which axes each variation moved.

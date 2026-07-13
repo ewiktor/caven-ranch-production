@@ -24,9 +24,9 @@
 
 <!-- Per 00 index.md: where this expression's meaning depends on the state of another (e.g. a mark that may or may not be redrawn), name the worlds — same mockup, different world — so variations get built per world and judged as worlds against each other. Name any build dependency: an asset that must exist before a world can be built. Delete this section if there are none. -->
 
-## Leave open (variation space)
+## Leave open — filled + cycled (variation space)
 
-<!-- Everything not locked. Knowledge and media controls fill from 07 knowledge/ and 05 media/ at production time. The rest get cycled — pull option words from other expressions or from the ad logic blocks — and that cycling is what makes the variations. Where the principal's commentary hedged on a focus control, the hedge is a fork: name the variant directions worth building as distinct variations. -->
+<!-- Everything not locked, in the two non-locked fill-states. FILLED controls (subject-matter) are determined at production time by 07 knowledge/ and 05 media/ — not invented; variation on them comes from swapping which knowledge/media fills the slot. CYCLED controls are genuinely open — pull option words from other expressions or from the ad logic blocks — and that cycling is what makes the variations. Where the principal's commentary hedged on a focus control, the hedge is a fork: name the variant directions worth building as distinct variations. -->
 
 - [open control or dimension, and any specific directions worth cycling through]
 
