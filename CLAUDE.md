@@ -46,7 +46,7 @@ The full walkthrough is `00 - START HERE.md`. The short form:
 1. Open an expression in `02 expressions/`. Its `doc.md` is the brief for the expression itself: locked controls are constraints, open controls are the variation space.
 2. Work from a content concept in `07 content concepts/`, never from a blank page. No concept? Write it first (L1).
 3. Build the brief per the L-steps in `function/steps/`: outline → visual direction → copy. Results accumulate in `08 briefs/[concept]/`.
-4. **Compile (L5) into 2–3 build prompts. This is your deliverable — the loop stops here.** Hand the prompts to the user. You do not build the design.
+4. **Compile (L5) into 2–3 build prompts. This is your deliverable — the loop stops here.** Present them to the user **in the chat**: a short grounding line, each variation labeled with the one axis it moves, and the prompt itself in a code block, copy-ready (L5 has the format). Save them to `08 briefs/[concept]/prompts/` too. You do not build the design.
 
 > **Building the design is a separate step, not part of this loop.** Taking a compiled prompt into Paper / image tools, the recursive build-and-critique, the whole run — all of that lives in `function/tools/unattended run.md`. In an ordinary session you write the prompts and stop; you never hand-code HTML, render, or otherwise produce the output yourself.
 
