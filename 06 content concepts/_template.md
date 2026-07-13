@@ -1,6 +1,6 @@
 # [content concept name]
 
-<!-- One md per concept. A content concept is a decided piece of content: one small goal under the big goal, one move for one person, one message, an angle, an execution. Written off input/01 brief (strategy), 07 knowledge/, and 05 media/ using 02 function/steps/L1 content creation.md. For a website these are typically the page sections and the concepts they carry; for other formats, the pieces. Keep it short — the brief (08) is where it gets built out. -->
+<!-- One md per concept. A content concept is a decided piece of content: one small goal under the big goal, one move for one person, one message, an angle, an execution. Written off input/01 brief (strategy), 05 knowledge/, and 03 media/ using function/steps/L1 content creation.md. For a website these are typically the page sections and the concepts they carry; for other formats, the pieces. Keep it short — the brief (08) is where it gets built out. -->
 
 **Goal** — [the small goal this piece carries, and the big goal it serves]
 
@@ -14,4 +14,4 @@
 
 **Execution** — [format first: what this is (web section, hero, table, guide), where it lives]
 
-**Draws on** — [which knowledge docs / domains in 07 knowledge/, and the kind of media it leans on from 05 media/]
+**Draws on** — [which knowledge docs / domains in 05 knowledge/, and the kind of media it leans on from 03 media/]

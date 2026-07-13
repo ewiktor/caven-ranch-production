@@ -1,6 +1,6 @@
 # [asset filename, e.g. facade-entrance.jpg]
 
-<!-- One md per asset, named [asset filename].md. This doc is how briefs and compiled prompts see the asset — the description carries what the image shows AND what it carries (place, mood, scale, proof), because that's what gets whittled against. The CDN link is what compiled prompts use; a media doc without one is not done. Usage rules that bind an asset (e.g. "future-vision contexts only") get their own line here AND an entry in 03 settled/settled.md. -->
+<!-- One md per asset, named [asset filename].md. This doc is how briefs and compiled prompts see the asset — the description carries what the image shows AND what it carries (place, mood, scale, proof), because that's what gets whittled against. The CDN link is what compiled prompts use; a media doc without one is not done. Usage rules that bind an asset (e.g. "future-vision contexts only") get their own line here AND an entry in 01 settled/settled.md. -->
 
 ## Description
 

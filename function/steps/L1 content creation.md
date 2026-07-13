@@ -1,5 +1,5 @@
-**Reads:** input/01 brief (strategy).md · 07 knowledge/ · 05 media/Media Markdown Docs/
-**Writes:** 08 content concepts/ — one md per concept, in the shape of 07's _template.md
+**Reads:** input/01 brief (strategy).md · 05 knowledge/ · 03 media/Media Markdown Docs/
+**Writes:** 06 content concepts/ — one md per concept, in the shape of 07's _template.md
 
 # Content Creation Framework
 
