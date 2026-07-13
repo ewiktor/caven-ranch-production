@@ -22,6 +22,7 @@ Names marked (unsettled) are working names — use them, don't harden them, don'
 - **Block** — pull-in logic: a doc an agent folds into a prompt (`logic/`). **Tool** — an action prompt run on demand (`function/tools/`). **Step** — an L-numbered action doc in `function/steps/` with a Reads/Writes header.
 - **Settled** — decisions off the consideration table (`01 settled/settled.md`). Constraints in prompts, never considerations.
 - **Learnings** — reusable tool and prompt findings (`01 settled/learnings.md`). Checked before every compile; toolchain findings transfer between brand repos, brand findings never do.
+- **Unattended run** — the autonomous production mode (never "overnight run"): `function/tools/unattended run.md`. Run it in-chat and it works the loop by itself — breadth-first→deepen, route by lane, three distinct directions, critique gate with teeth, don't-stop rules. Carries the heavy accountability the attended base loop leaves light.
 - **The user** — the human directing the session (whoever's running the repo). Their judgment governs: source of locks, kills, and settled decisions. Authority-of-record is the commentary already loaded in `feedback.md` / `04 references/`; live authority is the user in the chat. Not a named field — it defaults to whoever you're talking to.
 
 ## Map

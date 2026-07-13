@@ -98,7 +98,7 @@ Check tiering is set per round in `00 brand.md`:
 - **Slow production:** L7/L8 run in full; polish enforcement is a gate.
 - **L6 (AD check)** fires only when a compiled control set or build prompt is about to run.
 
-When the user is present, their live word supersedes the docs — then write it back the same session. Autonomous/unattended running is a separate skill layer pulled in at run time, not part of this repo.
+When the user is present, their live word supersedes the docs — write it back the same session. To run production **autonomously** (unattended, nobody watching), use `function/tools/unattended run.md` — the self-contained run-and-go method: breadth-first then deepen, route each unit to the right lane, three structurally-distinct directions (never reskins), the critique gate with teeth, and the don't-stop rules. That tool is where the heavy accountability lives, because you're asleep; the base loop above stays light because you're the judge.
 
 ## Learnings
 
