@@ -26,13 +26,13 @@ Loop depth follows the check tiering in `00 index.md` (the mode line in `00 bran
 
 1. **Tried / worked / failed** — across the set as a whole, not board by board. Name which open axes were cycled and what each cycle showed.
 2. **Preserve** — what carries forward, specific enough the next build reuses it verbatim: values, faces, sizes, placements, recipes. Not "the type felt right."
-3. **Avoid** — as positive future direction where possible ("crop at the ascenders only"), not only negatives. Negatives-as-kills stay the principal's alone.
+3. **Avoid** — as positive future direction where possible ("crop at the ascenders only"), not only negatives. Negatives-as-kills stay the user's alone.
 4. **Fault line** — every failure classified to the surface it lives on:
    - **Doc problem** — a *locked* control is wrong, missing, or misleading → revise `doc.md` now, version-bumped, "(agent call, review)". The standing rule holds: fix the control set, never the prompt.
    - **Prompt problem** — the doc was right but the translation layer mistranslated it → fix the translation for the next run; the doc stays untouched. *Lane note:* in a compiled-prompt lane the translation layer is the compiled prompt; in a direct build it's the stated build decisions; where no translation layer exists separately from the build, this category collapses away — fault-line on doc / execution / axis-finding only.
    - **Execution problem** — prompt was right, the build or tool missed it → fix it in the build. Code is steerable mid-flight: edit and re-verify, don't re-roll.
-   - **Axis finding** — the failure sits on an *open* control and the variation did its job by ruling a direction out. That's evidence, not a fault: record it in the round, flag it as a negative *candidate* — it becomes a real negative only when the principal kills it. Findings that land on not-yet-vetted controls feed that open vet as evidence; they classify nothing and lock nothing.
-5. **Next move** — named and then *done*: another variation, a doc revision, a reference/media swap (pull different media from `03 media/` or different references from `04 references/`), an asset that must be made first, or — only when the doc genuinely cannot answer — a flagged question for the principal that the run routes around, never waits on.
+   - **Axis finding** — the failure sits on an *open* control and the variation did its job by ruling a direction out. That's evidence, not a fault: record it in the round, flag it as a negative *candidate* — it becomes a real negative only when the user kills it. Findings that land on not-yet-vetted controls feed that open vet as evidence; they classify nothing and lock nothing.
+5. **Next move** — named and then *done*: another variation, a doc revision, a reference/media swap (pull different media from `03 media/` or different references from `04 references/`), an asset that must be made first, or — only when the doc genuinely cannot answer — a flagged question for the user that the run routes around, never waits on.
 
 ## What counts as clean
 

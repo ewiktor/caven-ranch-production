@@ -16,7 +16,7 @@ Do not start reading `logic/`, `function/`, or the numbered folders in an unboun
 
 **If `00 brand.md` is filled with a real brand, orient and run the loop:**
 
-1. **`00 brand.md`** — the brand binding: which brand this is, who the principal is, the toolchain, the current round and its mode, and the state line. (You just read it.)
+1. **`00 brand.md`** — the brand binding: which brand this is, the toolchain, the current round and its mode, and the state line. (You just read it.)
 2. **`00 index.md`** — the glossary and the folder map. Read once to orient.
 3. **The Reads/Writes header** of whichever step doc you are running. The headers are the routing, not this file and not the index.
 
@@ -54,11 +54,11 @@ The full walkthrough is `00 - START HERE.md`. The short form:
 ## Hard rules — universal, every brand, every output
 
 - **Settled is settled.** `01 settled/settled.md` items are constraints, never considerations. Do not re-open them.
-- **Locked controls are locked.** Variation comes from the open ones. Never harden an open control into a lock on your own — that is the principal's call.
+- **Locked controls are locked.** Variation comes from the open ones. Never harden an open control into a lock on your own — that is the user's call.
 - **Facts come from `06 knowledge/` only.** Nothing invented. Nothing planned framed as already real — in copy or in imagery.
-- **Negatives are the principal's kills only.** Never an inferred prohibition. A wrong positive gets deleted, not countered.
-- **Write-back.** When the principal corrects direction live, the correction supersedes the doc the moment they say it — and the doc gets amended the same session, version-bumped. Corrections that die in chat get re-made wrong by the next agent.
-- **Provenance.** Every lock, preserve, and avoid traces to a source: the principal's words, a ref, settled, or knowledge. A claim with no source is agent judgment and gets flagged as such, so a reaction to it is never mistaken for a reaction to evidence.
+- **Negatives are the user's kills only.** Never an inferred prohibition. A wrong positive gets deleted, not countered.
+- **Write-back.** When the user corrects direction live, the correction supersedes the doc the moment they say it — and the doc gets amended the same session, version-bumped. Corrections that die in chat get re-made wrong by the next agent.
+- **Provenance.** Every lock, preserve, and avoid traces to a source: the user's words, a ref, settled, or knowledge. A claim with no source is agent judgment and gets flagged as such, so a reaction to it is never mistaken for a reaction to evidence.
 - **No invisible steps.** State build decisions in the open — in the chat or the brief — before building on them.
 
 ## Self-review — the discipline that was hardest to train
@@ -75,7 +75,7 @@ The known failure: an agent builds, likes its own output, and never re-opens the
 Controls sit in three fill-states (per the DRAPER schema): **locked** (from commentary), **filled** (from knowledge + media), **cycled** (open). Variations come from two places, and both are required:
 
 1. **Cycling the cycled controls, and swapping what fills the filled ones** — different media, different knowledge, different values on the controls the doc leaves open.
-2. **Variant directions inside the focus controls** — the controls the expression is actually testing usually admit multiple directions (a hedge in the principal's commentary is a fork, not a lock). Build those as distinct variations, not as one averaged take.
+2. **Variant directions inside the focus controls** — the controls the expression is actually testing usually admit multiple directions (a hedge in the user's commentary is a fork, not a lock). Build those as distinct variations, not as one averaged take.
 
 A set that varies only the media while every layout decision stays identical has not varied. A set that varies everything at once cannot be judged. Cycle deliberately and say in the capture which axes each variation moved.
 
@@ -98,8 +98,8 @@ Check tiering is set per round in `00 brand.md`:
 - **Slow production:** L7/L8 run in full; polish enforcement is a gate.
 - **L6 (AD check)** fires only when a compiled control set or build prompt is about to run.
 
-When the principal is present, their live word supersedes the docs — then write it back the same session. Autonomous/unattended running is a separate skill layer pulled in at run time, not part of this repo.
+When the user is present, their live word supersedes the docs — then write it back the same session. Autonomous/unattended running is a separate skill layer pulled in at run time, not part of this repo.
 
 ## Learnings
 
-Tool and prompt findings that will recur (a phrasing that works, a tool behavior that bites) go once into `01 settled/learnings.md` — check it before every compile, never re-derive what is already logged. Brand decisions go to `01 settled/settled.md` via the principal. Per-round findings stay in the round entries.
+Tool and prompt findings that will recur (a phrasing that works, a tool behavior that bites) go once into `01 settled/learnings.md` — check it before every compile, never re-derive what is already logged. Brand decisions go to `01 settled/settled.md` via the user. Per-round findings stay in the round entries.

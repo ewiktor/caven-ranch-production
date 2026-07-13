@@ -6,13 +6,13 @@ A brand will arrive with varying degrees of material. Nothing on this list excep
 
 ## The fast path — a DRAPER app export
 
-If the brand arrives as a **DRAPER app export folder** (a folder with `brief.md` + `production-notes/` + `knowledge/` + `media/` + `references/` + `explorations/`), don't work this list by hand. Run **`function/tools/load brand.md`** — it places every file, conforms it to the template shapes, merges the reference commentary, verifies the CDN links, and reports what's still missing. Then just fill the three fields it flags in `00 brand.md` (principal, toolchain, round + mode) and run a board pass.
+If the brand arrives as a **DRAPER app export folder** (a folder with `brief.md` + `production-notes/` + `knowledge/` + `media/` + `references/` + `explorations/`), don't work this list by hand. Run **`function/tools/load brand.md`** — it places every file, conforms it to the template shapes, merges the reference commentary, verifies the CDN links, and reports what's still missing. Then just fill the three fields it flags in `00 brand.md` (user, toolchain, round + mode) and run a board pass.
 
 The checklist below is the **manual/fallback path and the spec** for what each folder expects when a brand doesn't arrive as a clean export.
 
 ## 1. Bind the brand — required
 
-- [ ] Fill `00 brand.md` completely: brand, principal, round + mode, toolchain, state line, open questions. An agent landing in a repo with an unfilled brand.md is instructed to stop.
+- [ ] Fill `00 brand.md`'s **brand** section (what the brand is, what's being made) and the state line. Round/mode/toolchain have working defaults — leave them until production. There is no user/principal field. An agent landing in a repo whose brand section is still the `[brand name]` placeholder treats it as unbound and asks for the brand export.
 - [ ] **Paste in the strategy overview.** The overview is written OUTSIDE the repo — the repo never compiles it. Copy `function/tools/strategy overview writer.md` into a separate chat, give it the brand's strategy materials, and paste its output into `input/01 brief (strategy).md`. That digest is what the L-steps read. If no strategy exists yet, producing it is the first job of the engagement, not a template task.
 
 ## 2. Knowledge — `06 knowledge/`
@@ -28,13 +28,13 @@ The checklist below is the **manual/fallback path and the spec** for what each f
 
 ## 4. References — `04 references/` (the reference library)
 
-- [ ] One md per reference in `04 references/`, asset in `04 references/assets/`, per `_reference-doc-template.md`: **Description** (what it is) + **User context** (the principal's commentary, verbatim — this is what becomes locked controls) + the **CDN link**. A reference without its commentary is half-loaded.
+- [ ] One md per reference in `04 references/`, asset in `04 references/assets/`, per `_reference-doc-template.md`: **Description** (what it is) + **User context** (the user's commentary, verbatim — this is what becomes locked controls) + the **CDN link**. A reference without its commentary is half-loaded.
 - [ ] Identity references (an existing logo, monogram, wordmark) get tagged as such in their User context, and flagged — they may also seed `05 graphics/`.
 - [ ] The reference library is central: expressions point into it, references aren't copied per expression.
 
 ## 4b. Explorations — `input/explorations/` (if the brand arrives pre-explored)
 
-- [ ] Prior outputs (each with the principal's commentary + the prompt that made it) stage in `input/explorations/`. They are NOT expressions yet.
+- [ ] Prior outputs (each with the user's commentary + the prompt that made it) stage in `input/explorations/`. They are NOT expressions yet.
 - [ ] The first **board pass** (`function/tools/board pass.md`) forms expressions from the references + explorations + commentary, and files each exploration into its expression. If the brand arrives cold (no explorations), `02 expressions/` and `input/explorations/` stay empty until that first board pass — correct, not a gap.
 
 ## 5. Graphics — `05 graphics/`
@@ -44,7 +44,7 @@ The checklist below is the **manual/fallback path and the spec** for what each f
 
 ## 6. Settled — `01 settled/`
 
-- [ ] Anything already decided and off the table (colors locked by an existing identity, a mark that is not changing) goes into `settled.md` with its provenance. Only real decisions — near-locked items are recorded as near-locked, pending the principal's confirm.
+- [ ] Anything already decided and off the table (colors locked by an existing identity, a mark that is not changing) goes into `settled.md` with its provenance. Only real decisions — near-locked items are recorded as near-locked, pending the user's confirm.
 - [ ] `learnings.md` starts empty except for any toolchain findings ported from previous brand repos that used the same tools (tool findings transfer; brand findings never do).
 
 ## 7. Concepts and briefs — usually empty at intake

@@ -12,7 +12,7 @@
 
 ## What stayed open
 
-[Questions the principal explicitly kept open — these also go to 00 brand.md's open-questions list.]
+[Questions the user explicitly kept open — these also go to 00 brand.md's open-questions list.]
 
 ## What died
 
@@ -20,4 +20,4 @@
 
 ## Marked for review
 
-[Calls the AI made during the pass that the principal has not QA'd yet — each marked "(AI, review)".]
+[Calls the AI made during the pass that the user has not QA'd yet — each marked "(AI, review)".]

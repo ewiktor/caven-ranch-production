@@ -8,9 +8,9 @@ One brand's production repo, duplicated from the DRAPER production template. The
 
 ## The loop you're running
 
-0. **If `02 expressions/` is still empty and the brand arrived cold, that's correct.** The first exploration round plus a board pass (`function/tools/board pass.md`, run with the principal) is what fills it. Don't skip to briefs.
+0. **If `02 expressions/` is still empty and the brand arrived cold, that's correct.** The first exploration round plus a board pass (`function/tools/board pass.md`, run with the user) is what fills it. Don't skip to briefs.
 
-1. **Open an expression before you make anything.** Each folder in `02 expressions/` is one idea that survived exploration. Its `doc.md` tells you what it is, what the principal likes about it, which controls are locked (written as keywords, terms, and phrases — follow these exactly), and what's deliberately open. The open controls are your variation space: cycle them to make versions, don't touch the locked ones. `feedback.md` is the principal's raw commentary if you want the unfiltered read. The references it came from are tagged in `04 references/`; `explorations/` shows where it's been.
+1. **Open an expression before you make anything.** Each folder in `02 expressions/` is one idea that survived exploration. Its `doc.md` tells you what it is, what the user likes about it, which controls are locked (written as keywords, terms, and phrases — follow these exactly), and what's deliberately open. The open controls are your variation space: cycle them to make versions, don't touch the locked ones. `feedback.md` is the user's raw commentary if you want the unfiltered read. The references it came from are tagged in `04 references/`; `explorations/` shows where it's been.
 
 2. **Work from a content concept, not a blank page.** `07 content concepts/` holds the decided pieces — each one says what the piece is for, who it moves, the one message, and the angle. If a concept doesn't exist yet for what you want to make, it gets written first (step L1 in `function/steps/`).
 
@@ -30,6 +30,6 @@ Set per round in `00 brand.md`. In a high-volume round, copy doesn't need to be 
 
 - Locked controls in an expression doc are locked. Variation comes from the open ones.
 - `01 settled/` items are constraints, never considerations.
-- Open questions listed in `00 brand.md` belong to the principal — flag them when your work touches them, don't decide them.
+- Open questions listed in `00 brand.md` belong to the user — flag them when your work touches them, don't decide them.
 - Facts come from `06 knowledge/` only: no invented facts, nothing planned framed as already real.
 - Check tiering per `00 index.md`, mode per `00 brand.md`.

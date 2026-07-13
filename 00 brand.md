@@ -6,24 +6,18 @@
 
 [Two or three sentences: what the brand is, what is being made for it (website, identity, campaign, photography), and the one-line philosophy if the strategy brief has one. No history lesson — the strategy brief in input/ carries the depth.]
 
-## The principal
-
-**[Name]** — the human creative lead whose judgment governs. Wherever the system docs say "the principal," it means this person. Their commentary is the source of locked controls and negatives; their live direction supersedes docs (and gets written back the same session).
-
-Other people, if any, and their lanes:
-
-- [name] — [lane, e.g. controls/logic, strategy, engineering]
-
 ## Current round
 
-- **Round:** [e.g. Round 1 — exploration]
-- **Mode:** high-volume / slow-production (sets the check tiering in CLAUDE.md)
-- **Goal of this round:** [one or two sentences]
-- **Variation budget:** [e.g. 3–5 variations per expression, then log and move on]
+Defaults are fine to start — an agent does not need these answered to load a brand or run the first board pass. Confirm or adjust when you begin producing.
+
+- **Round:** Round 1 — exploration (default; advance as rounds complete)
+- **Mode:** high-volume (default for exploration; switch to slow-production for final passes — sets the check tiering in CLAUDE.md)
+- **Goal of this round:** [one or two sentences — fill when known]
+- **Variation budget:** 3–5 variations per expression, then log and move on (default)
 
 ## Toolchain
 
-- **Build tools:** [e.g. Claude Code in Paper, v0, Figma Make — whatever this brand's round runs in]
+- **Build tools:** [confirmed at first build, not needed at load — Paper / v0 / Figma Make, or whatever's wired this session. Usually the same across brands.]
 - **Image generation:** [tool + model, if in play]
 - **CDN:** [where assets get hosted; the pattern the media/reference docs link to — e.g. media.withdraper.com/[workspace-id]/[hash]]
 - **Board:** [Figma/whiteboard URL, if one exists]
@@ -35,4 +29,4 @@ Other people, if any, and their lanes:
 
 ## Open questions the run routes around
 
-- [decisions the principal owns that work must flag, not decide — e.g. a logo question, a naming question]
+- [decisions the human owns that work must flag, not decide — e.g. a logo question, a naming question]
