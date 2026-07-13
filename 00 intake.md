@@ -6,7 +6,7 @@ A brand will arrive with varying degrees of material. Nothing on this list excep
 
 ## The fast path — a DRAPER app export
 
-If the brand arrives as a **DRAPER app export folder** (a folder with `brief.md` + `production-notes/` + `knowledge/` + `media/` + `references/` + `explorations/`), don't work this list by hand. Run **`function/tools/load brand.md`** — it places every file, conforms it to the template shapes, merges the reference commentary, verifies the CDN links, and reports what's still missing. Then just fill the three fields it flags in `00 brand.md` (user, toolchain, round + mode) and run a board pass.
+If the brand arrives as a **DRAPER app export folder** (a folder with `brief.md` + `production-notes/` + `knowledge/` + `media/` + `references/` + `explorations/`), don't work this list by hand. Follow **`function/tools/load brand.md`** — its first step runs a deterministic script (`function/tools/load-brand.py <export-folder>`) that places every file, merges each reference's commentary, and stages the explorations, then you do the judgment half (fill `00 brand.md`'s brand section, ask about a board) and run a board pass.
 
 The checklist below is the **manual/fallback path and the spec** for what each folder expects when a brand doesn't arrive as a clean export.
 

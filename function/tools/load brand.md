@@ -42,29 +42,23 @@ Not every export has every folder. Some also carry an identity/brand-elements se
 
 ## Steps
 
-1. **Read the manifest** (`brief.md`) to see the full inventory. Read each folder's `context.md` — that's where the user's commentary lives.
+**The placement is done by a script, not by hand** — hand-copying drops files (explorations got skipped in early testing). Run the script, then do the judgment half.
 
-2. **Strategy → `input/01 brief (strategy).md`.** Copy the strategy overview in. Strip any app-only header (e.g. `**Source type:** text_note`) and any duplicated title. Confirm it has the expected sections (Task · Who this is for · Who the brand is now · Offering · Messaging · Why · What it needs to do · Desired outcome).
+1. **Run the load script:**
 
-3. **Fill `00 brand.md` from the strategy overview** — the brand, what's being made, the one-line. That's enough to bind the repo. The round/mode/toolchain fields have defaults (Round 1, high-volume, toolchain confirmed at first build) — leave them at their defaults; they don't block loading or the board pass. There is no "user/principal" field to fill — the human directing the session is the authority, and the loaded commentary is the authority of record. Don't invent a goal or a toolchain; leave the placeholders and note them in your report so they get confirmed when production starts.
+   ```
+   python3 "function/tools/load-brand.py" <path-to-the-brand-export-folder>
+   ```
 
-4. **Knowledge → `06 knowledge/`.** Copy each md as-is. If filenames aren't dated, leave them; note it.
+   Run it from the template repo root. It deterministically: places the strategy overview → `input/01 brief (strategy).md` (stripping the app header); knowledge → `06 knowledge/`; media docs + bundled assets → `03 media/`; reference docs + assets → `04 references/` **and merges each reference's commentary from `context.md` into its own `## User context` section**; and stages explorations (docs + assets) → `input/explorations/`. It prints a report of counts per folder. It does **not** download assets — the CDN link in each doc is the asset of record; local asset files are only those the export bundled (so `03 media/assets/` is often sparse — that's the export being CDN-only, not a failure).
 
-5. **Media → `03 media/`.** Copy each `[name].md` to `03 media/` and each asset to `03 media/assets/`. Each md already carries Description + CDN — leave it. Discard `media/context.md` (it's a bulk CDN index, redundant with the per-asset mds). Confirm every media md has its CDN link.
+2. **Check the report against the export.** Counts should match: every knowledge/media/reference/exploration doc placed, references' commentary merged, explorations staged. If a count is off, the export folder is shaped unusually — read `brief.md` (the export manifest) and place the odd ones by hand.
 
-6. **References → `04 references/` — and MERGE the commentary.** Copy each `[name].md` to `04 references/` and each asset to `04 references/assets/`. Then, for each reference, pull its commentary from `references/context.md` (match by title) and write it into that reference's md under a `## User context` section, verbatim. This is the most important step — the commentary is what becomes locked controls, and it must live with each reference, not in a separate file. Follow `04 references/_reference-doc-template.md` for the shape. **Tag identity references** (an existing logo, monogram, wordmark) in their `## User context` and list them in your report — they may also seed `05 graphics/`, but leave that call to the board pass.
+3. **Fill `00 brand.md`'s brand section** from `input/01 brief (strategy).md` — the brand, what's being made, the one-line. That binds the repo. Leave round/mode/toolchain at their defaults (Round 1 / high-volume / toolchain-at-first-build); they don't block anything. There is no user/principal field.
 
-7. **Explorations → `input/explorations/`.** Copy each md + asset. These are prior outputs (each has the user's commentary + the prompt that made it). They are pre-board-pass — do NOT turn them into expressions. They stage here until the board pass groups them.
+4. **Tag identity references.** Scan `04 references/` for existing brand marks (a logo, monogram, wordmark — the commentary usually says "the original logo"). Note them in the report; they may also seed `05 graphics/`, but leave that call to the board pass.
 
-8. **Verify integrity.** Every media / reference / exploration md must have (a) a CDN link and (b) a local asset path that resolves. Where a per-item md is missing a CDN, pull it from that folder's `context.md`. Flag anything still broken.
-
-9. **Report.** Write a short load report to the chat:
-   - counts loaded per folder,
-   - `00 brand.md` is bound (brand + strategy in place); the round/mode/toolchain defaults hold until production — no need to stop for them,
-   - identity references found and flagged,
-   - anything missing or broken,
-   - **ask whether there's an exploration board** (a Figma / FigJam / whiteboard link) for this brand. The user may have one and not have included it in the export. If yes, get the link and record it in `00 brand.md`'s **Board** field — the board pass can read it directly (Figma MCP) and it makes the pass far richer than working from the export alone. If no, say so; the board pass will work from the loaded references + explorations.
-   - and the next step: **a board pass** (`function/tools/board pass.md`) to form expressions from the board (if there is one) plus the references + explorations + commentary, since `02 expressions/` is still empty.
+5. **Ask about a board, then report.** Write a short report: the script's counts, identity references found, and **ask whether there's an exploration board** (Figma / FigJam / whiteboard). The user may have one and not have included the link. If yes, record it in `00 brand.md`'s **Board** field — the board pass can read it directly. Then name the next step: **a board pass** (`function/tools/board pass.md`) to form expressions from the board (if any) plus the references + explorations + commentary, since `02 expressions/` is still empty.
 
 ## What stays empty after loading
 
@@ -72,4 +66,8 @@ Not every export has every folder. Some also carry an identity/brand-elements se
 
 ## The bar
 
-After this runs, a person should be able to open the repo, fill the three missing `00 brand.md` fields, and start a board pass — with every asset in place, every reference carrying its commentary, and every CDN link live. Placement and conforming only; no creative decisions, no expressions.
+After the script runs and you've done the judgment half, a person can open the repo, glance at the bound `00 brand.md`, and start a board pass — every doc placed, every reference carrying its commentary, every CDN link intact, explorations staged. Placement and conforming only; no creative decisions, no expressions.
+
+## Note on assets
+
+The script never downloads. The CDN link inside each media/reference doc is the asset of record — that's what compiled build prompts use, and it resolves in the DRAPER environment even when a plain fetch 404s. Local files under `assets/` are only the ones the export bundled, so those folders are often partial. That is expected; do not treat a sparse `assets/` as a broken load. If a local copy is ever needed, download it in the environment where the CDN is authenticated.
