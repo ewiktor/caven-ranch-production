@@ -66,6 +66,16 @@ Controls sit in three fill-states (per the DRAPER schema): **locked** (from comm
 
 A set that varies only the media while every layout decision stays identical has not varied. A set that varies everything at once cannot be judged. Cycle deliberately and say in the capture which axes each variation moved.
 
+## Effort discipline — stay fast
+
+The system has many docs on purpose (accountability). That only stays fast if you read and work lean:
+
+- **Read scoped, not front-loaded.** Pull a step doc when you run that step, and read only what its Reads header names. Do not open every step doc, block, and knowledge file before making anything — that is where minutes vanish.
+- **Match ceremony to the round mode.** A high-volume round does not walk four heavyweight docs (L2→L3→L4→L5) per expression — it compresses outline + direction + copy into one lighter pass. The full separate-document walk is slow-production behavior.
+- **View each source once.** Don't re-open the same reference or media doc repeatedly in one pass. Look, note what you need, move on.
+- **The compiled prompt is the handoff.** Once L5 packages the prompt (CDN links, copy, directives inline), the build tool reads nothing else — no repo traversal during the build.
+- **Run the 2–3 variations in parallel.** They're independent builds; don't do them one after another.
+
 ## Checks
 
 Check tiering is set per round in `00 brand.md`:

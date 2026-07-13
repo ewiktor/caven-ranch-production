@@ -7,7 +7,7 @@ A brand will arrive with varying degrees of material. Nothing on this list excep
 ## 1. Bind the brand — required
 
 - [ ] Fill `00 brand.md` completely: brand, principal, round + mode, toolchain, state line, open questions. An agent landing in a repo with an unfilled brand.md is instructed to stop.
-- [ ] **Compile the strategy overview.** The brand's full strategy set (customer research · competitive set · product offering · brand strategy · communications · content strategy · creative) lives upstream in the DRAPER app — it is NOT copied into the repo. Send those docs at brand-load and compile them into one digest at `input/01 brief (strategy).md` (shape: `input/_strategy-overview-template.md`). That digest is what the L-steps read. If no strategy exists yet, producing it is the first job of the engagement, not a template task.
+- [ ] **Paste in the strategy overview.** The overview is written OUTSIDE the repo — the repo never compiles it. Copy `function/tools/strategy overview writer.md` into a separate chat, give it the brand's strategy materials, and paste its output into `input/01 brief (strategy).md`. That digest is what the L-steps read. If no strategy exists yet, producing it is the first job of the engagement, not a template task.
 
 ## 2. Knowledge — `05 knowledge/`
 
