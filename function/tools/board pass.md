@@ -31,3 +31,7 @@ Either way the judgment is the user's; the AI works their words into structure. 
 - Assets to make into `05 graphics/to-make.md`, with blockers named.
 - Anything that dies on the board: note it died and why, so it doesn't resurface next round.
 - Update the state line in `00 brand.md`.
+
+## After the pass — the next step is content concepts, not production
+
+Expressions now exist, but `07 content concepts/` is still empty — and you build briefs from a content concept, never from a blank page. So the next move is **L1 (`function/steps/L1 content creation.md`)**: write the first content concepts from the strategy overview + knowledge + media. Only once at least one content concept exists do you enter the production loop (pick an expression + a concept → L2–L5 brief → compile → produce). Don't jump straight from the board pass to "pick an expression and run variations" — there's nothing to build against yet.

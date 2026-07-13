@@ -8,7 +8,7 @@ One brand's production repo, duplicated from the DRAPER production template. The
 
 ## The loop you're running
 
-0. **If `02 expressions/` is still empty and the brand arrived cold, that's correct.** The first exploration round plus a board pass (`function/tools/board pass.md`, run with the user) is what fills it. Don't skip to briefs.
+0. **Round-1 startup, from a freshly loaded brand.** If `02 expressions/` is empty, that's correct — you haven't done the board pass yet. The bootstrap order is: **board pass** (`function/tools/board pass.md`, with the user) forms the expressions from the references + explorations → **L1** writes the first content concepts from the strategy (`07 content concepts/` is empty and you can't build a brief without one) → *then* the production loop below. Don't jump from the board pass straight to producing — you need at least one content concept first.
 
 1. **Open an expression before you make anything.** Each folder in `02 expressions/` is one idea that survived exploration. Its `doc.md` tells you what it is, what the user likes about it, which controls are locked (written as keywords, terms, and phrases — follow these exactly), and what's deliberately open. The open controls are your variation space: cycle them to make versions, don't touch the locked ones. `feedback.md` is the user's raw commentary if you want the unfiltered read. The references it came from are tagged in `04 references/`; `explorations/` shows where it's been.
 
