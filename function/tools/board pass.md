@@ -10,7 +10,7 @@ The exploration round's outputs, grouped and marked up — wherever they live (F
 
 ## Access
 
-**First, check for a board.** Look at `00 brand.md`'s Board field, and if it's empty, ask the user directly: "Is there a Figma / FigJam / whiteboard exploration board for this brand?" Don't assume there isn't one just because the export didn't include a link — a board is common and easy to forget to send. (The load step should have asked, but confirm here.)
+**First, check for a board.** Ask the user directly: "Is there a Figma / FigJam / whiteboard exploration board for this brand?" Don't assume there isn't one just because the export didn't include a link — a board is common and easy to forget to send.
 
 - **If there's a board:** get the link and read it directly (Figma MCP) — frames plus the user's comments. This is the richest input.
 - **If there's no board:** the "board" is the loaded export — the references carry the user's commentary (their per-item talk-through) and the explorations carry theirs. Work from those.
@@ -27,10 +27,10 @@ Either way the judgment is the user's; the AI works their words into structure. 
 ## Outputs — where things land
 
 - One folder per confirmed expression in `02 expressions/NN name/` (zero-padded number + short name, e.g. `01 color`) — copy `_expression-template/` in and rename it, then drop the band's keying-on commentary into `feedback.md` verbatim. Tag which references from `04 references/` belong to this expression (name them in its `doc.md` — references stay in the central library, not copied). Move any staged explorations from `input/explorations/` into the expression's `explorations/`.
-- Settled decisions into `01 settled/settled.md`, at their honest strength — near-locked stays near-locked. Questions the user explicitly keeps open go to `00 brand.md`'s open-questions list, not to settled.
+- Settled decisions into `01 settled/settled.md`, at their honest strength — near-locked stays near-locked. Questions the user explicitly keeps open go into `01 settled/settled.md` under an "Open questions" section (flag, don't decide), not mixed in with the settled decisions.
 - Assets to make into `05 graphics/to-make.md`, with blockers named.
 - Anything that dies on the board: note it died and why, so it doesn't resurface next round.
-- Update the state line in `00 brand.md`.
+- Record the board link (if any) and what got decided in the board-pass record (`02 expressions/_board-pass-record.md`).
 
 ## After the pass — the next step is content concepts, not production
 

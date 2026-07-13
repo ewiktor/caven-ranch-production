@@ -1,10 +1,9 @@
 **Reads:** nothing — apply while thinking, at any step
 **Writes:** nothing
 
-**Check tiering**
+**Checks**
 - Always on, every output: the hard-truth rules — no invented facts, nothing planned framed as already real, facts sourced from 06 knowledge/.
-- High-volume rounds (per the mode in 00 brand.md): L7 and L8 are a fast gut-pass for the hard rules above, not a full stylistic audit. Em-dash, phrasing, and polish enforcement is a slow-production pass, not a volume-round gate.
-- L6 (AD check) fires only when a compiled control set or build prompt is about to run — not on every rough derivation.
+- L7 (thinking) and L8 (writing) run on outputs and copy before they ship; L6 (AD check) fires when a compiled control set or build prompt is about to run.
 
 # DON'T DO THIS AI BULLSHIT.
 

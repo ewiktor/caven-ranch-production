@@ -8,9 +8,9 @@ You are about to run production autonomously, with nobody watching. The failure 
 
 Quick, before any building:
 
-1. **Read `00 brand.md`** — mode (high-volume vs slow-production), toolchain (the lanes), variation budget, and the open questions you must flag-not-decide.
+1. **Read the brand** — `input/01 brief (strategy).md`, and skim `01 settled/settled.md` for constraints and the open questions you must flag-not-decide.
 2. **Confirm the queue and the ceiling.** What is this run building — which expressions/concepts, in what priority? And the time ceiling (or "until done"). If you weren't given a queue, propose one from the current state and say so.
-3. **Verify the lanes are actually connected** (§ Lanes). A tool named in `00 brand.md` but not wired this session is a blocker — surface it now, not mid-run. A newly-added MCP may need a session reload.
+3. **Verify the lanes are actually connected** (§ Lanes). A lane you'll need that isn't wired this session is a blocker — surface it now, not mid-run. A newly-added MCP may need a session reload.
 4. **State the plan back** in a few lines (scope · lanes · ceiling · anything unresolved) and wait for an explicit **"go."** After that, do not check in until the run ends.
 
 Requires that the brand is past intake and has expressions + at least one content concept (you build against a concept, never a blank page). If `02 expressions/` is empty, the run is a board pass + L1 first, not this.
@@ -27,7 +27,7 @@ Requires that the brand is past intake and has expressions + at least one conten
 
 ## Lanes — route by work type
 
-The specific tools per brand are in `00 brand.md`'s toolchain; this is the mapping of work → lane.
+This is the mapping of work → lane; the tool for each lane is named in its row (DRAPER's standard stack).
 
 | Work type | Lane |
 |---|---|
@@ -67,7 +67,7 @@ A design is **rejected and redone** if any is true:
 - **Questions only the human can answer:** flag them in the log, take the least-committal path that keeps the unit moving, mark the output "(pending [question])." Never wait.
 - **Doc ambiguity:** resolve per the fill order (refs → documented taste → settled + knowledge → your judgment, flagged). A gap is a flag, not a pause.
 - **Do not check in mid-run** because a result is good, or to report progress. Capture and continue.
-- **`settled/` is never re-opened; the open questions in `00 brand.md` are flagged, not decided.**
+- **`settled/` is never re-opened; the open questions recorded in `01 settled/settled.md` are flagged, not decided.**
 
 ## Token / effort discipline
 
@@ -75,4 +75,4 @@ Terse self-critiques, one compact log entry per round, one generation per attemp
 
 ## When the run ends
 
-Write a run summary at the top of the run log: units completed, keepers, open flaws, flagged questions, what needs the human's eye first. Update the state line in `00 brand.md`. Then stop.
+Write a run summary at the top of the run log: units completed, keepers, open flaws, flagged questions, what needs the human's eye first. Then stop.

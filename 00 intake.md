@@ -6,13 +6,13 @@ A brand will arrive with varying degrees of material. Nothing on this list excep
 
 ## The fast path — a DRAPER app export
 
-If the brand arrives as a **DRAPER app export folder** (a folder with `brief.md` + `production-notes/` + `knowledge/` + `media/` + `references/` + `explorations/`), don't work this list by hand. Follow **`function/tools/load brand.md`** — its first step runs a deterministic script (`function/tools/load-brand.py <export-folder>`) that places every file, merges each reference's commentary, and stages the explorations, then you do the judgment half (fill `00 brand.md`'s brand section, ask about a board) and run a board pass.
+If the brand arrives as a **DRAPER app export folder** (a folder with `brief.md` + `production-notes/` + `knowledge/` + `media/` + `references/` + `explorations/`), don't work this list by hand. Follow **`function/tools/load brand.md`** — its first step runs a deterministic script (`function/tools/load-brand.py <export-folder>`) that places every file, merges each reference's commentary, and stages the explorations, then you do the judgment half (confirm the strategy overview, ask about a board) and run a board pass.
 
 The checklist below is the **manual/fallback path and the spec** for what each folder expects when a brand doesn't arrive as a clean export.
 
 ## 1. Bind the brand — required
 
-- [ ] Fill `00 brand.md`'s **brand** section (what the brand is, what's being made) and the state line. Round/mode/toolchain have working defaults — leave them until production. There is no user/principal field. An agent landing in a repo whose brand section is still the `[brand name]` placeholder treats it as unbound and asks for the brand export.
+- [ ] The **strategy overview** at `input/01 brief (strategy).md` is the brand binding — the load script places it from the export. Confirm it's there and reads right. There's no separate brand file to fill. An agent landing in a repo where that file is absent treats it as unloaded and asks for the brand export.
 - [ ] **Paste in the strategy overview.** The overview is written OUTSIDE the repo — the repo never compiles it. Copy `function/tools/strategy overview writer.md` into a separate chat, give it the brand's strategy materials, and paste its output into `input/01 brief (strategy).md`. That digest is what the L-steps read. If no strategy exists yet, producing it is the first job of the engagement, not a template task.
 
 ## 2. Knowledge — `06 knowledge/`
@@ -55,4 +55,4 @@ The checklist below is the **manual/fallback path and the spec** for what each f
 
 - [ ] Grep the repo for the previous brand's name, people, and URLs — a duplicated repo must carry zero of the source brand. (`function/steps/L5a` is the one sanctioned exception: it is a worked example and says so in its header.)
 - [ ] Read `CLAUDE.md` top to bottom once as if you were the landing agent: every pointer it makes must resolve to something real in this repo.
-- [ ] Update the state line in `00 brand.md` and commit.
+- [ ] Commit.

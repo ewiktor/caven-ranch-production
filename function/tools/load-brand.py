@@ -7,7 +7,7 @@ Run from the template repo root (or pass the template dir as the 2nd arg). This 
 mechanical half of `load brand.md` — every file placed the same way every time, nothing
 skipped. It does NOT download assets: the .md files carry CDN links (that's the asset of
 record); local asset files are copied when the export bundled them. After it runs, do the
-judgment half from `load brand.md`: fill 00 brand.md's brand section from the strategy,
+judgment half from `load brand.md`: confirm the strategy overview landed,
 and ask whether there's an exploration board.
 """
 import sys, os, re, shutil, glob
@@ -112,8 +112,8 @@ def main():
 
     print("LOAD COMPLETE\n" + "\n".join("  " + r for r in report))
     print("\nNext (judgment half, per load brand.md):")
-    print("  1. Fill 00 brand.md's brand section from input/01 brief (strategy).md")
-    print("  2. Ask the user if there's an exploration board (Figma/whiteboard) — record it in 00 brand.md")
+    print("  1. Confirm input/01 brief (strategy).md landed — that is the brand binding")
+    print("  2. Ask the user if there is an exploration board (Figma/whiteboard) — hold it for the board pass")
     print("  3. Run the board pass to form expressions")
 
 if __name__ == "__main__":

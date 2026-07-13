@@ -54,11 +54,11 @@ Not every export has every folder. Some also carry an identity/brand-elements se
 
 2. **Check the report against the export.** Counts should match: every knowledge/media/reference/exploration doc placed, references' commentary merged, explorations staged. If a count is off, the export folder is shaped unusually — read `brief.md` (the export manifest) and place the odd ones by hand.
 
-3. **Fill `00 brand.md`'s brand section** from `input/01 brief (strategy).md` — the brand, what's being made, the one-line. That binds the repo. Leave round/mode/toolchain at their defaults (Round 1 / high-volume / toolchain-at-first-build); they don't block anything. There is no user/principal field.
+3. **The strategy overview is the binding.** `input/01 brief (strategy).md` (placed by the script) is what tells every agent which brand this is — there's nothing else to fill. Confirm it landed and reads right.
 
 4. **Tag identity references.** Scan `04 references/` for existing brand marks (a logo, monogram, wordmark — the commentary usually says "the original logo"). Note them in the report; they may also seed `05 graphics/`, but leave that call to the board pass.
 
-5. **Ask about a board, then report.** Write a short report: the script's counts, identity references found, and **ask whether there's an exploration board** (Figma / FigJam / whiteboard). The user may have one and not have included the link. If yes, record it in `00 brand.md`'s **Board** field — the board pass can read it directly. Then name the next step: **a board pass** (`function/tools/board pass.md`) to form expressions from the board (if any) plus the references + explorations + commentary, since `02 expressions/` is still empty.
+5. **Ask about a board, then report.** Write a short report: the script's counts, identity references found, and **ask whether there's an exploration board** (Figma / FigJam / whiteboard). The user may have one and not have included the link. If yes, hold onto it for the board pass. Then name the next step: **a board pass** (`function/tools/board pass.md`) to form expressions from the board (if any) plus the references + explorations + commentary, since `02 expressions/` is still empty.
 
 ## What stays empty after loading
 
@@ -66,7 +66,7 @@ Not every export has every folder. Some also carry an identity/brand-elements se
 
 ## The bar
 
-After the script runs and you've done the judgment half, a person can open the repo, glance at the bound `00 brand.md`, and start a board pass — every doc placed, every reference carrying its commentary, every CDN link intact, explorations staged. Placement and conforming only; no creative decisions, no expressions.
+After the script runs and you've done the judgment half, a person can open the repo, read the strategy overview, and start a board pass — every doc placed, every reference carrying its commentary, every CDN link intact, explorations staged. Placement and conforming only; no creative decisions, no expressions.
 
 ## Note on assets
 

@@ -6,7 +6,7 @@ This repo form is a pre-implementation of the DRAPER system in plain folders and
 
 ## Land here first
 
-- **Agents:** `CLAUDE.md` (the system prompt — loads automatically in Claude Code) then `00 brand.md` then `00 index.md`.
+- **Agents:** `CLAUDE.md` (the system prompt — loads automatically in Claude Code) then `00 index.md`.
 - **Humans:** `00 - START HERE.md` — the loop, the bar, the rules that don't bend.
 - **Loading a new brand:** `00 intake.md`.
 
@@ -14,7 +14,7 @@ This repo form is a pre-implementation of the DRAPER system in plain folders and
 
 **Universal (never edited per brand):** `CLAUDE.md`, `00 index.md`, `00 - START HERE.md`, this README, everything in `logic/` and `function/`, and every `_`-prefixed template and contract file.
 
-**Brand (filled at intake, grows through rounds):** `00 brand.md`, `input/`, and the contents of `01`–`09`. The folders themselves and their templates are the system; what fills them is the brand.
+**Brand (filled at intake, grows through rounds):** `input/`, and the contents of `01`–`09`. The folders themselves and their templates are the system; what fills them is the brand.
 
 One deliberate exception: `function/steps/L5a applied direction - prmpt example.md` (the L5a step) is a worked example from an unrelated brand ("prmpt"), kept because a concrete compiled prompt teaches the format better than a schema. Its header says so; its CDN links are stale and nothing in it applies to your brand.
 
@@ -25,7 +25,7 @@ DRAPER-wide, the documentation splits into four layers. This repo is the product
 - **Logic** — the concept-level material: what controls are, the control lists per production type, the AD-logic option vocabulary, how commentary becomes locked keywords. Here: `logic/`.
 - **Function** — the runnable units: steps, tools, checks, prompts, rule blocks. Here: `function/steps/` and `function/tools/`.
 - **Structure** — where things live and how they're served: the folder map, the doc shapes, the CDN convention, eventually the database and front end. Here: the numbered folders, the `_` templates, and the conventions in `00 index.md`.
-- **Process** — the stages of a brand build and of production, and the loop that runs inside them. Here: `00 - START HERE.md` and the round/mode framing in `00 brand.md`.
+- **Process** — the stages of a brand build and of production, and the loop that runs inside them. Here: `00 - START HERE.md`.
 
 ## The core mechanic, in one paragraph
 

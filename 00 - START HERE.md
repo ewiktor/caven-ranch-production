@@ -4,7 +4,7 @@ This is the human guide. Agents orient with `CLAUDE.md` and `00 index.md` instea
 
 ## What this repo is
 
-One brand's production repo, duplicated from the DRAPER production template. The system — the loop, the logic steps, the blocks and tools, the templates — is universal and identical across brand repos. The brand — its brief, knowledge, media, references, expressions, and everything produced — lives in the numbered folders. `00 brand.md` says which brand this is and where the work stands; `00 intake.md` is how a new brand gets loaded in.
+One brand's production repo, duplicated from the DRAPER production template. The system — the loop, the logic steps, the blocks and tools, the templates — is universal and identical across brand repos. The brand — its strategy, knowledge, media, references, expressions, and everything produced — lives in the numbered folders. `input/01 brief (strategy).md` is the brand's strategy overview; `00 intake.md` is how a new brand gets loaded in.
 
 ## The loop you're running
 
@@ -14,22 +14,22 @@ One brand's production repo, duplicated from the DRAPER production template. The
 
 2. **Work from a content concept, not a blank page.** `07 content concepts/` holds the decided pieces — each one says what the piece is for, who it moves, the one message, and the angle. If a concept doesn't exist yet for what you want to make, it gets written first (step L1 in `function/steps/`).
 
-3. **Build the brief.** Per concept, walk the steps in `function/steps/`: L2 outline (what it covers, in what order, the single point), L3 visual direction (which expressions are in play, which media lands where — this is where you pull the expression docs and the media CDN docs), L4 copy (good enough for the round's mode — see the bar below). Each step doc says exactly what to read and where to write. The result accumulates in `08 briefs/[concept]/` in the template's shape.
+3. **Build the brief.** Per concept, walk the steps in `function/steps/`: L2 outline (what it covers, in what order, the single point), L3 visual direction (which expressions are in play, which media lands where — this is where you pull the expression docs and the media CDN docs), L4 copy. Each step doc says exactly what to read and where to write. The result accumulates in `08 briefs/[concept]/`.
 
-4. **Compile, then hand off.** L5 turns the finished brief into 2–3 build prompts (full spec, CDN links inline, so the tool does nothing but build). In an attended session the agent's job ends here: it gives *you* the prompts and you run them in your tools (v0, Figma Make, Paper). The agent builds the design itself only if you tell it to, or when the `unattended run` tool is running the show.
+4. **Compile — that's the deliverable.** L5 turns the finished brief into 2–3 build prompts (full spec, CDN links inline). The loop stops here: the compiled prompts are what this repo produces. Building the design from them — running a prompt in Paper / image tools, the recursive build-and-critique — is a separate step that lives in `function/tools/unattended run.md`, or the user runs the prompts themselves. You do not build the design in this loop.
 
-5. **Capture at the moment of making.** Before moving to the next thing: screenshot/export the result and write the small markdown per `09 output/_contract.md` — which tool, which prompt, which expressions were in play, and your honest commentary. Then copy that capture into each source expression's `explorations/`. Feedback captured in the moment is what the next round runs on; feedback left in your head is gone.
+**When built outputs come back:**
 
-6. **Round, then feed.** When an expression's variation set completes, run `function/tools/production log round.md` — the self-QA that classifies every failure to the surface it lives on and acts on it. Then feed the expressions: new idea surfaced → new expression folder. Existing idea developed → its doc.md advances (V2, V3). Idea died → say so in the doc and stop carrying it.
+5. **Capture at the moment of making** per `09 output/_contract.md` — which tool, which prompt, which expressions were in play, and the honest commentary — and copy it into each source expression's `explorations/`. Feedback left in your head is gone.
+
+6. **Round, then feed.** When a variation set completes, run `function/tools/production log round.md` — the self-QA that classifies every failure to the surface it lives on. Then feed the expressions: new idea → new folder; developed → advance the doc version; dead → say so and stop carrying it.
 
 ## The bar
 
-Set per round in `00 brand.md`. In a high-volume round, copy doesn't need to be perfect and media picks don't need to be final — the output needs to be good enough to really see a specific expression in the light of this brand. What a volume round produces is (a) outputs, yes, but mainly (b) developed expressions docs and captured judgment that the slower rounds build on. In slow production, the full checks gate.
+Output needs to be good enough to really *see* a specific expression in the light of this brand — copy doesn't have to be final, media picks don't have to be final. What a round mainly produces is (a) outputs, and (b) developed expression docs and captured judgment the next round builds on.
 
 ## Rules that don't bend
 
 - Locked controls in an expression doc are locked. Variation comes from the open ones.
 - `01 settled/` items are constraints, never considerations.
-- Open questions listed in `00 brand.md` belong to the user — flag them when your work touches them, don't decide them.
 - Facts come from `06 knowledge/` only: no invented facts, nothing planned framed as already real.
-- Check tiering per `00 index.md`, mode per `00 brand.md`.

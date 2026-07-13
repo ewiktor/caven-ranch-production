@@ -8,7 +8,7 @@ Not at the end of the session. The moment a variation exists, before making the 
 
 1. **The artifact** — screenshot or export of the result, plus the code where the tool gives it.
 2. **`capture.md`** — small, four things:
-   - **Tool:** which build tool (per 00 brand.md's toolchain), and the date
+   - **Tool:** which tool built it, and the date
    - **Prompt:** which compiled prompt from `08 briefs/[concept]/prompts/` ran (link or filename), plus any mid-run steering that changed it
    - **Expressions in play:** which expression folders this derivation drew on
    - **Commentary:** the honest read, raw, transcribed if spoken. Not "looks good": what's working and why, what clashes and whether the clash is good tension, what this rules out, what surfaced that wasn't asked for, which axes this variation moved relative to its siblings, and what needs to get made before this can be honestly judged.

@@ -1,6 +1,6 @@
 # Index — glossary and map
 
-Orientation for an agent landing cold. Read `00 brand.md` first (the brand binding), then this once, then follow the Reads/Writes header at the top of whichever step doc you are running — the headers are the routing, not this file. Humans start at `00 - START HERE.md`.
+Orientation for an agent landing cold. Read `input/01 brief (strategy).md` first (the strategy overview), then this once, then follow the Reads/Writes header at the top of whichever step doc you are running — the headers are the routing, not this file. Humans start at `00 - START HERE.md`.
 
 ## Glossary
 
@@ -22,8 +22,7 @@ Names marked (unsettled) are working names — use them, don't harden them, don'
 - **Block** — pull-in logic: a doc an agent folds into a prompt (`logic/`). **Tool** — an action prompt run on demand (`function/tools/`). **Step** — an L-numbered action doc in `function/steps/` with a Reads/Writes header.
 - **Settled** — decisions off the consideration table (`01 settled/settled.md`). Constraints in prompts, never considerations.
 - **Learnings** — reusable tool and prompt findings (`01 settled/learnings.md`). Checked before every compile; toolchain findings transfer between brand repos, brand findings never do.
-- **Unattended run** — the autonomous production mode (never "overnight run"): `function/tools/unattended run.md`. Run it in-chat and it works the loop by itself — breadth-first→deepen, route by lane, three distinct directions, critique gate with teeth, don't-stop rules. Carries the heavy accountability the attended base loop leaves light.
-- **The user** — the human directing the session (whoever's running the repo). Their judgment governs: source of locks, kills, and settled decisions. Authority-of-record is the commentary already loaded in `feedback.md` / `04 references/`; live authority is the user in the chat. Not a named field — it defaults to whoever you're talking to.
+- **The user** — the human directing the session (whoever's running the repo). Their judgment governs: source of locks, kills, and settled decisions. Authority-of-record is the commentary already loaded in `feedback.md` / `04 references/`; live authority is the user in the chat.
 
 ## Map
 
@@ -48,10 +47,8 @@ function/         steps/ (L1–L8 message flow) · tools/ (run on demand)       
 - Files starting with `_` are templates or contracts, not content.
 - Every step doc opens with **Reads:** and **Writes:** — that header is authoritative for what to pull in and where results go.
 
-## Check tiering
-
-The current round's mode is in `00 brand.md`.
+## Checks
 
 - Always on, every output: the hard-truth rules — no invented facts, nothing planned framed as already real, facts sourced from `06 knowledge/`.
-- High-volume rounds: L7 and L8 are a fast gut-pass for the hard rules above, not a full stylistic audit. Phrasing and polish enforcement is a slow-production pass, not a volume-round gate.
-- L6 (AD check) fires only when a compiled control set or build prompt is about to run — not on every rough derivation.
+- L7 (thinking) and L8 (writing) run on outputs and copy before they ship.
+- L6 (AD check) fires when a compiled control set or build prompt is about to run — not on every rough derivation.

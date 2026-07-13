@@ -12,7 +12,7 @@
 
 ## What stayed open
 
-[Questions the user explicitly kept open — these also go to 00 brand.md's open-questions list.]
+[Questions the user explicitly kept open — these also go to 01 settled/settled.md under an Open questions section.]
 
 ## What died
 
