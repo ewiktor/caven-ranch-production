@@ -1,6 +1,6 @@
 # Brand — [brand name]
 
-<!-- The single brand-binding file. Everything an agent needs to know about WHICH brand this repo is and WHERE the work stands. Filled at intake (00 intake.md), updated as rounds advance. This file is the only root doc that changes per brand — CLAUDE.md, 00 index.md, and 02 logic/ stay identical across brand repos. -->
+<!-- The single brand-binding file. Everything an agent needs to know about WHICH brand this repo is and WHERE the work stands. Filled at intake (00 intake.md), updated as rounds advance. This file is the only root doc that changes per brand — CLAUDE.md, 00 index.md, and everything in 01 logic/ and 02 function/ stay identical across brand repos. -->
 
 ## The brand
 

@@ -1,6 +1,6 @@
 # Board pass record — [date]
 
-<!-- The run artifact of a board pass (02 logic/tools/board pass.md). One per pass; a later pass appends a new dated section rather than rewriting. This is a record, not a template to fill exhaustively — write what the pass actually decided. -->
+<!-- The run artifact of a board pass (02 function/tools/board pass.md). One per pass; a later pass appends a new dated section rather than rewriting. This is a record, not a template to fill exhaustively — write what the pass actually decided. -->
 
 ## What got decided
 
@@ -8,7 +8,7 @@
 
 ## What went to settled
 
-[What landed in 01 settled/settled.md, at what strength.]
+[What landed in 03 settled/settled.md, at what strength.]
 
 ## What stayed open
 

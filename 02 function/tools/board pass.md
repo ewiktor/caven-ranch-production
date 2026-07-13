@@ -1,4 +1,4 @@
-**Run on demand** — once, with the principal, after an exploration round and before production runs on its results. `03 expressions/` stays empty until this happens. Run it again after a round returns if the groupings need reworking.
+**Run on demand** — once, with the principal, after an exploration round and before production runs on its results. `04 expressions/` stays empty until this happens. Run it again after a round returns if the groupings need reworking.
 
 # Board Pass
 
@@ -14,15 +14,15 @@ Preferred: direct read access to the board (e.g. Figma MCP), so the AI can read 
 
 ## The pass, band by band
 
-1. **Name it.** Short and referable ("preloader script", not a description). Naming vocabulary comes from `blocks/` where it fits — don't mint new schema terms mid-pass; flag naming tensions instead.
+1. **Name it.** Short and referable ("preloader script", not a description). Naming vocabulary comes from `01 logic/` where it fits — don't mint new schema terms mid-pass; flag naming tensions instead.
 2. **Say what it's keying on.** One or two sentences from the principal: what this band is actually about, what they like, what it must not lose. This feeds the expression doc later — capture it raw.
 3. **Confirm the grouping.** Is this band one expression or two? Should it merge with another? Are the sub-groupings right?
 4. **Check the columns.** Expect a middle column between full composition concepts and graphic assets: very specific little things (a formatting move, a micro-copy treatment) that aren't full compositions. Confirm per band which of the three it is.
 
 ## Outputs — where things land
 
-- One folder per confirmed expression in `03 expressions/[name]/`, template copied in, the band's keying-on commentary dropped into `feedback.md` verbatim. (Refs and explorations export from the board separately, after.)
-- Settled decisions into `01 settled/settled.md`, at their honest strength — near-locked stays near-locked. Questions the principal explicitly keeps open go to `00 brand.md`'s open-questions list, not to settled.
-- Assets to make into `05 graphics/to-make.md`, with blockers named.
+- One folder per confirmed expression in `04 expressions/[name]/`, template copied in, the band's keying-on commentary dropped into `feedback.md` verbatim. (Refs and explorations export from the board separately, after.)
+- Settled decisions into `03 settled/settled.md`, at their honest strength — near-locked stays near-locked. Questions the principal explicitly keeps open go to `00 brand.md`'s open-questions list, not to settled.
+- Assets to make into `06 graphics/to-make.md`, with blockers named.
 - Anything that dies on the board: note it died and why, so it doesn't resurface next round.
 - Update the state line in `00 brand.md`.

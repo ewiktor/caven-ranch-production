@@ -2,7 +2,7 @@
 **Writes:** nothing
 
 **Check tiering**
-- Always on, every output: the hard-truth rules — no invented facts, nothing planned framed as already real, facts sourced from 06 knowledge/.
+- Always on, every output: the hard-truth rules — no invented facts, nothing planned framed as already real, facts sourced from 07 knowledge/.
 - High-volume rounds (per the mode in 00 brand.md): L7 and L8 are a fast gut-pass for the hard rules above, not a full stylistic audit. Em-dash, phrasing, and polish enforcement is a slow-production pass, not a volume-round gate.
 - L6 (AD check) fires only when a compiled control set or build prompt is about to run — not on every rough derivation.
 

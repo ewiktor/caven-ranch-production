@@ -1,5 +1,5 @@
-**Reads:** the confirmed outline · 03 expressions/[relevant expressions]/ (doc.md, then refs/ and explorations/) · 04 media/Media Markdown Docs/ · 05 graphics/ · blocks/controls - composition.md · blocks/ad logic - composition.md
-**Writes:** the direction section of the brief in 08 briefs/[concept]/
+**Reads:** the confirmed outline · 04 expressions/[relevant expressions]/ (doc.md, then refs/ and explorations/) · 05 media/Media Markdown Docs/ · 06 graphics/ · 01 logic/controls - composition.md · 01 logic/ad logic - composition.md
+**Writes:** the direction section of the brief in 09 briefs/[concept]/
 
 # Composition - Direction
 
