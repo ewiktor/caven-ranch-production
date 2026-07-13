@@ -16,7 +16,7 @@ This repo form is a pre-implementation of the DRAPER system in plain folders and
 
 **Brand (filled at intake, grows through rounds):** `00 brand.md`, `input/`, and the contents of `01` and `03`–`09`. The folders themselves and their templates are the system; what fills them is the brand.
 
-One deliberate exception: `02 logic/L5a applied direction - prompt example.md` is a worked example from the Paisano test round, kept because a concrete compiled prompt teaches the format better than a schema. Its header says so.
+One deliberate exception: `02 logic/L5a applied direction - prmpt example.md` is a worked example from an unrelated brand ("prmpt"), kept because a concrete compiled prompt teaches the format better than a schema. Its header says so; its CDN links are stale and nothing in it applies to your brand.
 
 ## How this maps to the DRAPER system breakdown
 
