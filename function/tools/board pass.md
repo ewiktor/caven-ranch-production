@@ -19,14 +19,14 @@ Either way the judgment is the user's; the AI works their words into structure. 
 
 ## The pass, band by band
 
-1. **Name it.** Short and referable ("preloader script", not a description). Naming vocabulary comes from `logic/` where it fits — don't mint new schema terms mid-pass; flag naming tensions instead.
+1. **Name and number it.** Short and referable ("preloader script", not a description), with a **zero-padded number prefix**: `01 color`, `02 editorial-layout`, `03 lettering` … Number them in board order (or priority) as you confirm them — the number is the stable handle everything else cites ("expression 03"); the name can be refined later without breaking the number. Naming vocabulary comes from `logic/` where it fits — don't mint new schema terms mid-pass; flag naming tensions instead.
 2. **Say what it's keying on.** One or two sentences from the user: what this band is actually about, what they like, what it must not lose. This feeds the expression doc later — capture it raw.
 3. **Confirm the grouping.** Is this band one expression or two? Should it merge with another? Are the sub-groupings right?
 4. **Check the columns.** Expect a middle column between full composition concepts and graphic assets: very specific little things (a formatting move, a micro-copy treatment) that aren't full compositions. Confirm per band which of the three it is.
 
 ## Outputs — where things land
 
-- One folder per confirmed expression in `02 expressions/[name]/`, template copied in, the band's keying-on commentary dropped into `feedback.md` verbatim. Tag which references from `04 references/` belong to this expression (name them in its `doc.md` — references stay in the central library, not copied). Move any staged explorations from `input/explorations/` into the expression's `explorations/`.
+- One folder per confirmed expression in `02 expressions/NN name/` (zero-padded number + short name, e.g. `01 color`) — copy `_expression-template/` in and rename it, then drop the band's keying-on commentary into `feedback.md` verbatim. Tag which references from `04 references/` belong to this expression (name them in its `doc.md` — references stay in the central library, not copied). Move any staged explorations from `input/explorations/` into the expression's `explorations/`.
 - Settled decisions into `01 settled/settled.md`, at their honest strength — near-locked stays near-locked. Questions the user explicitly keeps open go to `00 brand.md`'s open-questions list, not to settled.
 - Assets to make into `05 graphics/to-make.md`, with blockers named.
 - Anything that dies on the board: note it died and why, so it doesn't resurface next round.

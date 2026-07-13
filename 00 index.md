@@ -31,7 +31,7 @@ input/               strategy brief + raw brand material + new-references/ inbox
 logic/            control sets · controls · ad logic (the pull-in "blocks")   [SYSTEM]
 function/         steps/ (L1–L8 message flow) · tools/ (run on demand)         [SYSTEM]
 01 settled/          settled.md (decisions off the table) · learnings.md (tool findings)
-02 expressions/      one folder per expression: doc.md, feedback.md, explorations/ (references tagged from 04 references/)
+02 expressions/      one folder per expression, named `NN name` (01, 02…): doc.md, feedback.md, explorations/ (references tagged from 04 references/)
 03 media/            one md per asset (description + CDN link) + assets/
 04 references/       reference library — one md per reference (description + user's commentary + CDN) + assets/
 05 graphics/         existing/made brand marks + one md per asset + to-make.md
