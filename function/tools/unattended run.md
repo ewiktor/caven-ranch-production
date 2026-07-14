@@ -1,8 +1,8 @@
-**Run on demand** — the autonomous production mode. Run it in-chat on a bound brand and it works the production loop by itself until the queue clears the bar or the time ceiling hits. The name is "unattended run," always — never "overnight run." This is the in-repo, run-and-go version of the method; it is self-contained (you don't need any external skill to run it).
+**Run on demand, UNDER A LOOP.** The autonomous production mode. The name is "unattended run," always — never "overnight run." **Critical: this does not run in one turn — it runs under a loop harness (`/loop`) that re-fires the agent until the completion gate is met.** A single turn always stops early; the loop is what makes it not stop. See "How this actually runs" below.
 
 # Unattended Run
 
-You are about to run production autonomously, with nobody watching. The failure mode of autonomous runs is two-sided: **stopping** (on an error, an ambiguity, or the instinct to wrap up and report) and **going fast-and-shallow** (coverage over quality — reskin variants, one tool for every job, build-once-and-move-on). This tool guards both. Cost is not the constraint; a considered, distinct, grounded set is.
+You are running production autonomously, with nobody watching. The failure mode is two-sided: **stopping early** (covering breadth, then wrapping up and reporting — the model's strongest instinct, and no prose rule reliably beats it: a real run quoted the "don't stop" rule and stopped anyway at 8 minutes of a 30-minute ceiling) and **going fast-and-shallow** (reskin variants, one tool for every job, build-once-and-move-on). The loop harness guards the first; the depth bar and critique gate guard the second. Cost is not the constraint; a considered, distinct, grounded, *deep* set is.
 
 ## Pre-flight — do this in-chat, then get one "go"
 
@@ -11,9 +11,27 @@ Quick, before any building:
 1. **Read the brand** — `input/01 brief (strategy).md`, and read `01 settled/settled.md`. From settled, derive the **open/settled axes map**: which axes (type, palette, marks, composition, scale, detail…) are **settled** (honor exactly) vs **open** (must be explored). This map decides where your variations are allowed to diverge — write it into your plan.
 2. **Confirm the queue and the ceiling.** What is this run building — which expressions/concepts, in what priority? And the time ceiling (or "until done"). If you weren't given a queue, propose one from the current state and say so.
 3. **Verify the lanes are actually connected** (§ Lanes). A lane you'll need that isn't wired this session is a blocker — surface it now, not mid-run. A newly-added MCP may need a session reload.
-4. **State the plan back** in a few lines (scope · lanes · ceiling · anything unresolved) and wait for an explicit **"go."** After that, do not check in until the run ends.
+4. **State the plan back** in a few lines (scope · lanes · ceiling · anything unresolved) and wait for an explicit **"go."** On "go," **launch the loop** (below) — don't try to do the whole run in this turn.
 
 Requires that the brand is past intake and has expressions + at least one content concept (you build against a concept, never a blank page). If `02 expressions/` is empty, the run is a board pass + L1 first, not this.
+
+## How this actually runs — under a loop, not one heroic turn
+
+The #1 failure is **stopping early**: the agent covers breadth, writes a summary, and hands back, because finishing a turn is the model's strongest instinct and no in-doc "don't stop" reliably beats it. So the run is **not one long turn** — it's driven by a loop that re-fires the agent until the completion gate is met.
+
+**Launch it under `/loop`, self-paced, with the ceiling** — e.g. `/loop` repeating "continue the unattended run per `function/tools/unattended run.md`, ceiling 30m." Each firing is **one iteration**: your job in this turn is only the next most valuable chunk, then let the loop bring you back. You are not trying to finish everything now.
+
+**Each iteration:**
+1. **Resume by reading state** — what already exists (the run log, `09 output/`, each unit's tally). Never rebuild what's done.
+2. **Pick the next most valuable chunk** — the weakest/most-important unit still below its depth bar, or the next uncovered unit. One chunk, not the whole plan.
+3. **Do it** (per-unit work below), update that unit's tally, log one line.
+4. **Check the completion gate.** Not met → end the turn and let the loop fire again. Met → stop the loop and write the summary.
+
+**The completion gate — the ONLY two reasons to end the whole run:**
+- the **time ceiling** has been reached, **or**
+- **every unit shows a full depth tally** (`dirs 3/3 · revise 2/2 · re-rolls 2/2 · craft ✓`).
+
+**Breadth coverage is NOT a completion condition.** "All units have a baseline" is the trap that ended the 8-minute run. While the clock has time left and any unit is below its depth bar, there is *always* a next chunk — another revise cycle on a leader, another system on an open axis, a craft pass, the next uncovered unit. **If you catch yourself writing a run summary while time remains and bars are unfilled, that IS the failure: delete it and do the next chunk.**
 
 ## The principles (these govern every unit)
 
@@ -36,9 +54,9 @@ This is the mapping of work → lane; the tool for each lane is named in its row
 | **Raster: illustration · texture · icons · marks** | An image-generation tool (e.g. Nano Banana Pro). **Never hand-code SVG for illustration** — it comes out geometric and cheap. |
 | **Lettering / mark redraws** | Image-gen or a dedicated lettering pass — not composition tooling. |
 
-## Per unit — the loop you actually run
+## Per unit — the work of one unit (a chunk of an iteration)
 
-For each unit in the queue:
+When an iteration works a unit:
 
 1. **Enter via an expression** (`02 expressions/[NN name]/doc.md` — locks are constraints, open controls are the variation space).
 2. **Ground it in a content concept** (`07 content concepts/`) — never a blank page. Write one (L1) if none fits.
@@ -86,6 +104,8 @@ A design is **rejected and redone** if any is true:
 
 Terse self-critiques, one compact log entry per round, one generation per attempt, view each source once. Reusable tool/prompt findings go once into `01 settled/learnings.md` — check it before every compile, never re-derive.
 
-## When the run ends
+## When the run ends (gate met, not before)
 
-Write a run summary at the top of the run log: units completed, keepers, open flaws, flagged questions, what needs the human's eye first. Then stop.
+Only once the completion gate is met — ceiling reached, or every unit's depth tally full — write a run summary at the top of the run log: units completed, per-unit tallies, keepers, open flaws, flagged questions, what needs the human's eye first. Then stop the loop.
+
+If the gate is **not** met, there is no "end." The turn ends; the loop fires again and you do the next chunk. A summary is the last thing you write, never the thing that lets you stop early.
