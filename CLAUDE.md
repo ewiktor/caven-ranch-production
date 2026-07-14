@@ -39,9 +39,15 @@ function/            THE SYSTEM — steps/ (L1–L8 message flow) · tools/ (run
 
 Root numbers (01–09) are all **brand** — the material that flows through a round. The **system** (`logic/`, `function/`) and `input/` sit outside the numbers. L-numbers are the message-flow steps. Files starting with `_` are templates, not content.
 
-## The loop — you take it to compiled prompts, and stop there
+## "Explore expression N" → write prompts, now
 
-The full walkthrough is `00 - START HERE.md`. The short form:
+When the user says **"explore expression N"** (or "write prompts for N", "let's do N", or points at an expression), that is a direct instruction to **produce compiled build prompts** — go straight to `function/tools/explore expression.md`. Read the expression + its refs/commentary, then **write 2–3 standalone prompts in the chat and stop.** Do not write an essay of analysis first, do not route through the content-concept pipeline, and **do not ask "want me to go?" — just produce them.** If you spot a doc problem, flag it in one line *after* the prompts, never instead of them. Producing the prompts is the task; asking permission to do the task is the bug.
+
+**Every prompt is standalone.** The user sends prompts to the build tool one at a time — a prompt that says "same as variation I" or "the baseline" is broken when it arrives alone. Each code block repeats its entire spec (content, copy, palette, type, structural rules, CDN links) and never cross-references another prompt. Comparison lives only in the chat prose around the code blocks.
+
+## The loop — the full production pipeline
+
+The heavier pipeline below is for **producing a specific content concept** (a real page/section). For just *exploring an expression*, use the light path above. The full walkthrough is `00 - START HERE.md`. The short form:
 
 1. Open an expression in `02 expressions/`. Its `doc.md` is the brief for the expression itself: locked controls are constraints, open controls are the variation space.
 2. Work from a content concept in `07 content concepts/`, never from a blank page. No concept? Write it first (L1).
