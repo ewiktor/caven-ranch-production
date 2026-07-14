@@ -8,7 +8,7 @@ You are about to run production autonomously, with nobody watching. The failure 
 
 Quick, before any building:
 
-1. **Read the brand** — `input/01 brief (strategy).md`, and skim `01 settled/settled.md` for constraints and the open questions you must flag-not-decide.
+1. **Read the brand** — `input/01 brief (strategy).md`, and read `01 settled/settled.md`. From settled, derive the **open/settled axes map**: which axes (type, palette, marks, composition, scale, detail…) are **settled** (honor exactly) vs **open** (must be explored). This map decides where your variations are allowed to diverge — write it into your plan.
 2. **Confirm the queue and the ceiling.** What is this run building — which expressions/concepts, in what priority? And the time ceiling (or "until done"). If you weren't given a queue, propose one from the current state and say so.
 3. **Verify the lanes are actually connected** (§ Lanes). A lane you'll need that isn't wired this session is a blocker — surface it now, not mid-run. A newly-added MCP may need a session reload.
 4. **State the plan back** in a few lines (scope · lanes · ceiling · anything unresolved) and wait for an explicit **"go."** After that, do not check in until the run ends.
@@ -18,16 +18,16 @@ Requires that the brand is past intake and has expressions + at least one conten
 ## The principles (these govern every unit)
 
 1. **Full scope, always.** Do everything the queue asks. Coverage is never what gets cut.
-2. **Depth is the flex variable, not scope.** Build the whole scope breadth-first to a baseline, then deepen weakest-first. Half the units at 3 iterations and half at 2 is a good run; half *unbuilt* is a bad run, even if the built half is perfect.
-3. **Time is a ceiling, not a target.** A big queue uses the time; a small one finishes when genuinely good, then *stops*. Never pad the clock, never rush it.
-4. **Three structurally distinct directions, never reskins.** Variations must differ in layout logic, type system, or compositional idea — not a swapped image or word. **Name the three distinct directions before building.** If you can't name three, build fewer, better.
+2. **Depth is the flex variable, not scope — and baseline is NOT done.** Build the whole scope breadth-first to a baseline, then **deepen weakest-first, and depth is mandatory up to the time ceiling.** Hitting baseline on everything and stopping is the #1 failure (a real run stopped at ~50 min of a 6h ceiling because it read "everything cleared the baseline" as "done"). Keep deepening until the ceiling hits or every unit clears the *depth* bar (§ the countable depth bar) — not the baseline bar.
+3. **Time is a ceiling, not a target.** A big queue uses the time; a small one finishes when everything genuinely clears the depth bar, then *stops*. Never pad the clock, never rush it. But do not finish early just because breadth is covered — that's the trap in #2.
+4. **Distinct on the OPEN axes — never a reskin, never a silent settle.** "Three structurally distinct directions" means distinct **on the axes that are open for this brand** (from your open/settled map). Honor settled axes exactly and get your divergence elsewhere. An **open axis is a mandate to explore** — put ≥3 genuinely different systems against each other *within the references' character* — never a blank check to invent, and never something to lock on pass 1. The enemy is not only the obvious reskin (same layout, swapped image) — it's the whole set quietly **sharing one system on an open axis** (one type system, one spacing rhythm, one detail language across every board) and calling breadth "done." That's a system-level reskin and it's fatal in an exploration round.
 5. **Route each unit to the right lane** (below). Never force everything through one tool.
 6. **Ground every design in a content concept, and follow the brand's L-steps** as the per-unit procedure. The critique loop wraps the L-steps; it doesn't replace them.
 7. **Critique and revise against the written bar.** Don't build once and move on.
 
 ## Lanes — route by work type
 
-This is the mapping of work → lane; the tool for each lane is named in its row (DRAPER's standard stack).
+This is the mapping of work → lane; the tool for each lane is named in its row (DRAPER's standard stack). **Paper is a single stateful session — run units serially, not in parallel; a parallel workflow is unsafe for one stateful plugin session.**
 
 | Work type | Lane |
 |---|---|
@@ -44,16 +44,29 @@ For each unit in the queue:
 2. **Ground it in a content concept** (`07 content concepts/`) — never a blank page. Write one (L1) if none fits.
 3. **Walk the L-steps:** L2 outline → L3 visual direction (pull the relevant expression docs + media/reference CDN docs) → L4 copy → L5 compile 2–3 build prompts, CDN links inline.
 4. **Name three structurally distinct directions**, then generate them **in the right lane**.
-5. **Critique against the bar** (below). Redo or rewrite the weak one. Regenerate. This is where the quality is won.
-6. **Capture at the moment of making** per `09 output/_contract.md` (tool · prompt · expressions in play · honest commentary · which axes each variation moved), and copy into each source expression's `explorations/`.
+5. **Critique against the bar** and **fill the countable depth bar** (both below): ≥2 critique → rewrite → rebuild cycles on the leader, ≥2 re-rolls on raster, an explicit craft pass. This is where the quality is won — a single pass is not a done unit.
+6. **Capture at the moment of making** per `09 output/_contract.md` (tool · prompt · expressions in play · honest commentary · which open axes each variation moved), and copy into each source expression's `explorations/`.
 7. **Run the production log round** (`production log round.md`) on the set, act on the fault line, then feed the expressions (new → new folder; developed → advance the doc; dead → say so).
-8. **Move on.** Later passes deepen the weakest units.
+8. **Move on once the depth bar is full** — then, after breadth is covered, keep deepening the weakest units until the ceiling. Baseline coverage is not the finish line; the ceiling (or every unit clearing the depth bar) is.
+
+## The countable depth bar (baseline can't masquerade as done)
+
+Keep a **visible per-unit tally** so you can't mistake breadth for depth. A unit isn't done until its tally is full or the ceiling hits:
+
+`dirs 3/3 · revise 2/2 · re-rolls 2/2 · craft ✓`
+
+- **dirs 3/3** — three directions that are genuinely distinct *on the open axes* (not a reskin, not a shared system).
+- **revise 2/2** — at least two critique → rewrite → rebuild cycles on the leading direction. Single-pass is not done.
+- **re-rolls 2/2** — for raster/image-gen units, at least two prompt re-rolls, not a one-shot.
+- **craft ✓** — an explicit fine-craft pass: kerning, optical spacing, alignment, the small touches. Named, not assumed.
 
 ## The critique gate (the teeth)
 
 A design is **rejected and redone** if any is true:
 
 - the "variations" are one idea with a swapped attribute (reskin),
+- **the whole set shares one system on an open axis** — one type system / one spacing rhythm / one detail language across every board when that axis was open to explore (system-level reskin),
+- an **open axis got silently settled** on pass 1 instead of explored,
 - it isn't grounded in a real content concept (generic),
 - the type is default / AI-generic or not matched to the reference's character,
 - it reads cheap: boxy, evenly-spaced, timid scale/whitespace, no compositional tension,
