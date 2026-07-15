@@ -4,14 +4,21 @@
 
 You are running production autonomously, with nobody watching. The failure mode is two-sided: **stopping early** (covering breadth, then wrapping up and reporting — the model's strongest instinct, and no prose rule reliably beats it: a real run quoted the "don't stop" rule and stopped anyway at 8 minutes of a 30-minute ceiling) and **going fast-and-shallow** (reskin variants, one tool for every job, build-once-and-move-on). The loop harness guards the first; the depth bar and critique gate guard the second. Cost is not the constraint; a considered, distinct, grounded, *deep* set is.
 
-## Pre-flight — do this in-chat, then get one "go"
+## Pre-flight — iteration 0, before any building (this is a gate, not a suggestion)
 
-Quick, before any building:
+The **first firing of the loop does ONLY this** — no building until the checklist is done and the user has said "go." In a real run this got skipped entirely; the agent went straight to building and never ran the checklist. Iteration 0 is the gate.
 
-1. **Read the brand** — `input/01 brief (strategy).md`, and read `01 settled/settled.md`. From settled, derive the **open/settled axes map**: which axes (type, palette, marks, composition, scale, detail…) are **settled** (honor exactly) vs **open** (must be explored). This map decides where your variations are allowed to diverge — write it into your plan.
-2. **Confirm the queue and the ceiling.** What is this run building — which expressions/concepts, in what priority? And the time ceiling (or "until done"). If you weren't given a queue, propose one from the current state and say so.
-3. **Verify the lanes are actually connected** (§ Lanes). A lane you'll need that isn't wired this session is a blocker — surface it now, not mid-run. A newly-added MCP may need a session reload.
-4. **State the plan back** in a few lines (scope · lanes · ceiling · anything unresolved) and wait for an explicit **"go."** On "go," **launch the loop** (below) — don't try to do the whole run in this turn.
+1. **Read the real clock and write the run-state file.** Run `date` — **never guess or narrate the time.** (A real run fabricated a start time — "10:24" — to make stopping at 26 minutes look like 50; the stopping instinct back-fills a lie.) Write `09 output/_run-state.md`:
+   - **Start:** the real clock from `date`
+   - **Ceiling:** start + the run's duration — the hard stop
+   - **Target:** a NUMBER — e.g. `18 expressions × 2 variants = 36 boards`
+   - **Tally:** `0 / [target]`
+   This file is the source of truth for time-left and progress. You read it every iteration; you never trust your own memory of the clock or the count.
+2. **Remind the user to run `caffeinate -dis`** in a terminal, so the machine doesn't sleep mid-run and kill it silently. (Long runs die without this.)
+3. **Confirm this is launched under `/loop`.** If you're running in a single turn and not a loop, say so and tell the user to relaunch as `/loop 3m [the brief]` — do NOT proceed in one turn. A single turn stops early by design; the loop is the whole point.
+4. **Verify the lanes are actually connected** (§ Lanes). A lane you'll need that isn't wired is a blocker — surface it now. A newly-added MCP may need a session reload.
+5. **Read the brand and derive the open/settled map** — `input/01 brief (strategy).md` + `01 settled/settled.md`: which axes (type, palette, marks, composition, scale, detail…) are **settled** (honor exactly) vs **open** (must be explored). This map decides where variations diverge.
+6. **State the checklist back** — clock · ceiling · target number · caffeinate reminder · lanes · open/settled map · queue — and wait for an explicit **"go."**
 
 Requires that the brand is past intake and has expressions + at least one content concept (you build against a concept, never a blank page). If `02 expressions/` is empty, the run is a board pass + L1 first, not this.
 
@@ -19,19 +26,20 @@ Requires that the brand is past intake and has expressions + at least one conten
 
 The #1 failure is **stopping early**: the agent covers breadth, writes a summary, and hands back, because finishing a turn is the model's strongest instinct and no in-doc "don't stop" reliably beats it. So the run is **not one long turn** — it's driven by a loop that re-fires the agent until the completion gate is met.
 
-**Launch it under `/loop`, self-paced, with the ceiling** — e.g. `/loop` repeating "continue the unattended run per `function/tools/unattended run.md`, ceiling 30m." Each firing is **one iteration**: your job in this turn is only the next most valuable chunk, then let the loop bring you back. You are not trying to finish everything now.
+**Launch it under `/loop` with a short fixed interval and the ceiling** — e.g. `/loop 3m continue the unattended run per function/tools/unattended run.md, ceiling 60m`. A fixed interval means the harness re-fires you every 3 minutes **no matter what** — even if you stopped, it drags you back. (Self-paced leaves the "continue?" call to your judgment, which is the judgment that fails.) Each firing is **one iteration**: your job this turn is only the next most valuable chunk, then let the loop bring you back. You are not trying to finish everything now.
 
 **Each iteration:**
-1. **Resume by reading state** — what already exists (the run log, `09 output/`, each unit's tally). Never rebuild what's done.
-2. **Pick the next most valuable chunk** — the weakest/most-important unit still below its depth bar, or the next uncovered unit. One chunk, not the whole plan.
-3. **Do it** (per-unit work below), update that unit's tally, log one line.
-4. **Check the completion gate.** Not met → end the turn and let the loop fire again. Met → stop the loop and write the summary.
+1. **Read `09 output/_run-state.md`** — the tally (`X / target`) and the ceiling. This is the source of truth for what's left and how long, not your memory. Run `date` to get the real current time; never estimate it.
+2. **Resume by reading state** — what already exists in `09 output/` and each unit's tally. Never rebuild what's done.
+3. **Pick the next most valuable chunk** — the next unbuilt item, or the weakest unit still below its depth bar. One chunk, not the whole plan.
+4. **Do it** (per-unit work below), then **update `_run-state.md`**: bump the tally, log the one-line entry.
+5. **Check the completion gate against the FILE.** Not met → end the turn and let the loop fire again. Met → stop the loop and write the summary.
 
-**The completion gate — the ONLY two reasons to end the whole run:**
-- the **time ceiling** has been reached, **or**
-- **every unit shows a full depth tally** (`dirs 3/3 · revise 2/2 · re-rolls 2/2 · craft ✓`).
+**The completion gate — read from `_run-state.md` + `date`, the ONLY two reasons to end the whole run:**
+- **`date` ≥ ceiling** (the real clock, not an estimate), **or**
+- **tally ≥ target** with every unit showing a full depth tally (`dirs 3/3 · revise 2/2 · re-rolls 2/2 · craft ✓`).
 
-**Breadth coverage is NOT a completion condition.** "All units have a baseline" is the trap that ended the 8-minute run. While the clock has time left and any unit is below its depth bar, there is *always* a next chunk — another revise cycle on a leader, another system on an open axis, a craft pass, the next uncovered unit. **If you catch yourself writing a run summary while time remains and bars are unfilled, that IS the failure: delete it and do the next chunk.**
+**Breadth coverage is NOT a completion condition.** "All units have a baseline" is the trap that ended the 8-minute run. While `date` < ceiling and tally < target, there is *always* a next chunk — another revise cycle on a leader, another system on an open axis, a craft pass, the next unbuilt item. **If you catch yourself writing a run summary while the file says time remains and the tally is short, that IS the failure: delete it and do the next chunk.**
 
 ## The principles (these govern every unit)
 
@@ -106,6 +114,10 @@ Terse self-critiques, one compact log entry per round, one generation per attemp
 
 ## When the run ends (gate met, not before)
 
-Only once the completion gate is met — ceiling reached, or every unit's depth tally full — write a run summary at the top of the run log: units completed, per-unit tallies, keepers, open flaws, flagged questions, what needs the human's eye first. Then stop the loop.
+Only once the completion gate is met — `date` ≥ ceiling, or tally ≥ target with every depth bar full — write a run summary at the top of `09 output/_run-state.md` and the run log: units completed, per-unit tallies, keepers, open flaws, flagged questions, what needs the human's eye first. Then stop the loop.
 
 If the gate is **not** met, there is no "end." The turn ends; the loop fires again and you do the next chunk. A summary is the last thing you write, never the thing that lets you stop early.
+
+## The enforcement layer (not built yet — flagged)
+
+Everything above is still, ultimately, instructions the agent follows — stronger because time and progress now live in a file it can't fabricate, but not yet *enforced*. The real teeth is a **Stop hook** (`settings.json`): a harness hook that fires when the agent tries to end its turn, reads `_run-state.md`, and — if `date` < ceiling and tally < target — **blocks the stop** and re-injects "not done, X/target, N min left, build the next one." That is the one mechanism the agent physically cannot override. It's the next thing to wire (with a clean escape hatch so a run can still be killed on purpose). Until then, the fixed-interval `/loop` + the run-state file are the levers.
