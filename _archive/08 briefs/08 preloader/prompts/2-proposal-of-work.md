@@ -25,9 +25,7 @@ Left edge at x=64. Last baseline at y=856. It is enormous and thin, and it very 
 
 BOTTOM-RIGHT — the coyote, walking
 https://raw.githubusercontent.com/ewiktor/caven-ranch-production/main/05%20graphics/assets/paper-run-02/coyotes/v2-coyote-walking-right-silhouette.png
-If that file is unavailable, use:
-https://raw.githubusercontent.com/ewiktor/caven-ranch-production/main/05%20graphics/assets/paper-run-02/coyotes/v1-coyote-resting-right-silhouette.png
-A solid near-black coyote, transparent background, facing right. Render it 190px tall with its right edge at x=1370 and its base at y=810. Tint it to #23180F so it reads tone-on-tone with the type, part of the same ink as everything else. It is small, alone, and walking out of the corner.
+A solid near-black walking coyote, transparent background, facing right. Render it 190px tall with its right edge at x=1370 and its base at y=810. Tint it to #23180F so it reads tone-on-tone with the type, part of the same ink as everything else. It is small, alone, and walking out of the corner.
 
 THE VOID
 The entire middle band of the sheet, roughly y=200 to y=600, stays completely empty saddle. Nothing crosses it.
