@@ -1,6 +1,6 @@
 # Typography — expressions doc
 
-**Version:** V1 · 2026-07-16 · Formed at second board pass. Carries a real unresolved tension between the old catalogue's type stance and the newer reference library — flagged, not resolved
+**Version:** V2 · 2026-07-17 · **Piazzolla KILLED by the user in session** ("stop forcing yourself to use Piazzolla — do not use that anymore") — supersedes the 2026-07-16 "best candidate, push more of it" note below wherever it appears. The display voice is fully open again; the typewriter register (Courier Prime at display size worked on the E03 history page) is a live candidate
 **Type:** brand expression (type)
 
 ## What it is
@@ -24,7 +24,8 @@ From the references: "a high-contrast serif for primary menu items… a structur
 
 ## Negative
 
-None settled — the catalogue's "avoid overly delicate or high-contrast fashion serifs" is months old and contradicted by the newer reference library the user assembled; carried as the open tension below, not as a kill.
+- **Piazzolla** — killed by the user 2026-07-17, live in session: "do not use that anymore." Not a display face, not a body face, not anywhere.
+- (The catalogue's "avoid overly delicate or high-contrast fashion serifs" is months old and contradicted by the newer reference library the user assembled; carried as the open tension below, not as a kill.)
 
 ## References (tagged)
 
