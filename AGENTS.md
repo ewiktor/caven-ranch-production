@@ -70,6 +70,7 @@ When built outputs come back:
 - **Negatives are the user's kills only.** Never an inferred prohibition. A wrong positive gets deleted, not countered.
 - **Write-back.** When the user corrects direction live, the correction supersedes the doc the moment they say it — amend the doc the same session, version-bumped.
 - **Provenance.** Every lock, preserve, and avoid traces to a source: the user's words, a ref, settled, or knowledge. A claim with no source is agent judgment, flagged as such.
+- **Assets before prompts — never hand the user homework.** A prompt ships with every asset it needs already made and already linked. If the prompt calls for an illustration, a texture, a mark, or a photo that does not exist yet: **make it first, host it, put the working link in the prompt.** Writing "ASSET TO CREATE — generate this" into a prompt is a failure, not a caveat; it hands back the work the prompt was supposed to package. Same for an asset that exists locally but has no URL — publish it, then link it. The order is: check what the prompt needs → make what is missing → *then* write the prompt. A prompt is not finished while any slot in it is a description instead of a link.
 
 ## Self-review — the discipline that was hardest to train
 
